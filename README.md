@@ -7,13 +7,10 @@ Version 1.0.x
 
 + This repository contains all the components necessary to link a Launchpad to Traktor with
 my customized set of controls and LEDs.
-+ Here are several quick-reference guides for the [Controls](#ii-controls-list).
++ Here are several quick-reference guides for the [Controls](#ii-controls).
 + This script is driven by 2 core principles:
   - Controls' effects and layout should reflect actual DJ needs.
   - Proper abstractions create intuitive and powerful controls, freeing the mind and body of the DJ for more complex expression.
-
-#####NOTE: The guide assumes the user has at least Traktor v2.0 installed.
-+ [Latest Traktor Install](http://www.native-instruments.com/en/products/traktor/dj-software/)
 
 #Table of Contents:
 ####I) [Install](#i-install)
@@ -27,6 +24,7 @@ my customized set of controls and LEDs.
 
 ------------------------
 ## II) Controls:
+![Diagram](https://github.com/wolfbiter/kane-launchpad-traktor/blob/master/launchpad-diagram%20backup.PNG)
 
 ------------------------
 ## III) Contact:
