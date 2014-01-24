@@ -12,21 +12,23 @@ my customized set of controls and LEDs.
   - Controls' effects and layout should reflect actual DJ needs.
   - Proper abstractions create intuitive and powerful controls, freeing the mind and body of the DJ for more complex expression.
 
-##Table of Contents:
-I) [Install](#install)
-II) [Controls](#controls)
-III) [Contact](#contact)
-
-
 #####NOTE: The guide assumes the user has at least Traktor v2.0 installed.
 + [Latest Traktor Install](http://www.native-instruments.com/en/products/traktor/dj-software/)
 
+#Table of Contents:
+####I) [Install](#install)
+####II) [Controls](#controls)
+####III) [Contact](#contact)
+
+------------------------
 ## I) Install:
 ###1. [Download the preset as a zip archive](https://github.com/wolfbiter/kane-launchpad-traktor/archive/master.zip).
 ###2. Copy contents of mixxx-controls to the mixxx preset folder
 
+------------------------
 ## II) Controls:
 
+------------------------
 ## III) Contact:
 For any questions, suggestions, or bug reports, I encourage you to either [Submit An Issue](https://github.com/wolfbiter/kane-launchpad-traktor/issues?state=open) or contact me!
 
