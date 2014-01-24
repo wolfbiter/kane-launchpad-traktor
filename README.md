@@ -24,6 +24,7 @@ my customized set of controls and LEDs.
 
 ------------------------
 ## II) Controls:
+For more detailed explanation of each button, refer to the list below the image.
 ![Diagram](https://raw.github.com/wolfbiter/kane-launchpad-traktor/master/launchpad-diagram%20backup.PNG)
 
 ------------------------
