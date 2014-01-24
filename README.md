@@ -24,7 +24,7 @@ my customized set of controls and LEDs.
 
 ------------------------
 ## II) Controls:
-![Diagram](https://github.com/wolfbiter/kane-launchpad-traktor/blob/master/launchpad-diagram%20backup.PNG)
+![Diagram](https://raw.github.com/wolfbiter/kane-launchpad-traktor/master/launchpad-diagram%20backup.PNG)
 
 ------------------------
 ## III) Contact:
