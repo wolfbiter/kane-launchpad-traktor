@@ -24,9 +24,9 @@ my customized set of controls and LEDs.
 
 ------------------------
 ## II) Controls:
-- The Launchpad is split in two: The left half controls decks A/C, and the right half, decks B/D.
-- Some buttons have secondary functions while the shift button is held.
-- For a detailed explanation of each button, refer to the list below the image.
+- The Launchpad is split in two: The left half controls decks **A/C**, and the right half, decks **B/D**.
+- Some buttons have secondary functions while the **shift button** is held.
+- For a **detailed explanation** of each button, refer to the list below the image.
 
 ![Diagram](https://raw.github.com/wolfbiter/kane-launchpad-traktor/master/launchpad-diagram%20backup.PNG)
 
