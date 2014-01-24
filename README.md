@@ -13,9 +13,9 @@ my customized set of controls and LEDs.
   - Proper abstractions create intuitive and powerful controls, freeing the mind and body of the DJ for more complex expression.
 
 #Table of Contents:
-####I) [Install](#i-install)
-####II) [Controls](#ii-controls)
-####III) [Contact](#iii-contact)
+####I) [Install](#i-install-1)
+####II) [Controls](#ii-controls-1)
+####III) [Contact](#iii-contact-1)
 
 ------------------------
 ## I) Install:
