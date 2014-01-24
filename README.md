@@ -16,9 +16,9 @@ my customized set of controls and LEDs.
 + [Latest Traktor Install](http://www.native-instruments.com/en/products/traktor/dj-software/)
 
 #Table of Contents:
-####I) [Install](#install)
-####II) [Controls](#controls)
-####III) [Contact](#contact)
+####I) [Install](#i-install)
+####II) [Controls](#ii-controls)
+####III) [Contact](#iii-contact)
 
 ------------------------
 ## I) Install:
