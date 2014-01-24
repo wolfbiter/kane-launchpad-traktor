@@ -29,10 +29,9 @@ my customized set of controls and LEDs.
 
 ![Diagram](https://raw.github.com/wolfbiter/kane-launchpad-traktor/master/launchpad-diagram%20backup.PNG)
 
-####[1-8], [33-40]
-###### Hotcues
-- On press, select or place hotcue.
-- On shift, delete hotcue.
+####1-8,33-40: Hotcues
+- **Press**: select or place hotcue.
+- **Shift**: delete hotcue.
 
 ####9, 41
 ###### Grid Cue
