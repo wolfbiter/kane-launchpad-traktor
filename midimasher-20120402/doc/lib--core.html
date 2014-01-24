@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MidiMasher Documentation</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<style>
+H1
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#6060B0;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 18px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H2
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#D0D0FF;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+H3
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	background:#F0F0FF;
+	border-bottom:1px solid;
+	border-color:#E0E0E0;
+	color:#404080;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H4
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	color:#40a;
+	font-size: 14px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+CODE
+{
+	font-size: 16px;
+}
+
+TT
+{
+	font-size: 16px;
+}
+
+BODY {
+  background: white;
+  color: black;
+  font-family: arial,sans-serif;
+  margin: 0;
+  padding: 1ex;
+}
+TABLE {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 0;
+  color: inherit;
+}
+IMG { border: 0; }
+FORM { margin: 0; }
+input { margin: 2px; }
+A.fred {
+  text-decoration: none;
+}
+A:link, A:visited {
+  background: transparent;
+  color: #006699;
+}
+TD {
+  margin: 0;
+  padding: 0;
+}
+DIV {
+  border-width: 0;
+}
+DT {
+  margin-top: 1em;
+}
+TH {
+  /*background: #bbbbbb;*/
+  color: inherit;
+  padding: 0.4ex 1ex;
+  text-align: left;
+}
+TH A:link, TH A:visited {
+  background: transparent;
+  color: black;
+}
+A.m:link, A.m:visited {
+  background: #006699;
+  color: white;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:link, A.o:visited {
+  background: #006699;
+  color: #ccffcc;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+A.m:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+table.dlsip     {
+  background: #dddddd;
+  border: 0.4ex solid #dddddd;
+}
+PRE     {
+  background: #eeeeee;
+  border: 1px solid #888888;
+  color: black;
+  padding-top: 1em;
+  white-space: pre;
+}
+IMG     {
+  vertical-align: top;
+}
+A  {
+  text-decoration: none;
+}
+LI {
+  line-height: 1.2em;
+  list-style-type: none;
+}
+
+usage th { background-color: white }
+usage td { background-color: white }
+usage * param { color: #ccc }
+
+</style></head>
+
+<body style="background-color: white">
+<h1><a style='color:white'href="http://midimasher.djism.com/">Home</a> :: <a href='index.html' style='color:white'>MidiMasher Documentation</a> : src/core.lua</h1>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#send__"><code>send()</code></a></li>
+	
+
+	<li><a href="#capture__"><code>capture()</code></a></li>
+	
+
+	<li><a href="#route__"><code>route()</code></a></li>
+	
+
+	<li><a href="#open_midi_device__"><code>open_midi_device()</code></a></li>
+	
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="send__"><code>send()</code></a></h1>
+<p>send an event to a device</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ send(d, e, v, [p])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e</td><td>the input event name</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>v</td><td>value to send</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p</td><td>page (optional), use 0 for all pages, can also be multiple pages</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ send(&quot;traktor&quot;, &quot;cue_a&quot;, ON)
+ send(&quot;traktor&quot;, &quot;cue_a&quot;, ON, 0)
+ send(&quot;launchpad&quot;, &quot;0,0&quot;, lp_hi_red, 1)
+ send(&quot;launchpad&quot;, &quot;0,0&quot;, lp_hi_red, {2, 3})
+<p></pre>
+<p>
+</p>
+<hr />
+<h1><a name="capture__"><code>capture()</code></a></h1>
+<p>capture an event and process it</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ capture(d, e, v, p, cb)
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e</td><td>event names, </td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>v</td><td>values to capture, ALL, OFF or NOFF (meaning &quot;not off&quot;)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>function to be called on slicer status change (optional)</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ function my_function(d, e, v, p)
+    print(&quot;captured&quot;, d, e, v, p)
+  end
+ 
+  capture(&quot;launchpad&quot;, &quot;0,0&quot;, ALL, 0, &quot;my_function&quot;)
+ 
+  capture(&quot;launchpad&quot;, &quot;0,0&quot;, ALL, 0, my_function)
+ 
+  capture(&quot;launchpad&quot;, &quot;0,0&quot;, ALL, 0, function(d, e, v, p)
+    print(&quot;captured&quot;, d, e, v, p)
+  end)
+ 
+  capture(&quot;lp&quot;, &quot;0,1&quot;, ALL, 0, function(d, e, v, p)
+    send(&quot;traktor&quot;, &quot;jump_to_active_cue_point_a&quot;, v)
+    send(&quot;traktor&quot;, &quot;beatjump_+4_a&quot;, v)
+  end)
+<p></pre>
+<p>capture events from pages 2 and 3</p>
+<pre>
+  capture(&quot;launchpad&quot;, &quot;0,0&quot;, ALL, {2, 3}, &quot;my_function&quot;)
+<p></pre>
+<p>The value of v will be the actual value that came in</p>
+<p>
+</p>
+<hr />
+<h1><a name="route__"><code>route()</code></a></h1>
+<p>specify auto routing behaviour for events. this function is not normally called directly but via the functions from lib/base.lua</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<p>it accepts a table as argument that configure the routing behaviour</p>
+<pre>
+ route{ arg1 = val1, arg2 = val2 }
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>device</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>event</td><td>the input event name</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>value</td><td>what event values to process (ALL/NOFF/OFF) (optional, default=ALL)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>page</td><td>page (optional), use 0 for all pages, can also be multiple pages</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local feedback for the input device</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local feedback for the input device</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>tdevice</td><td>the output device name (optional)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>tevent</td><td>the output event name (optional)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>tpage</td><td>the output device page (optional)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_val</td><td>what value to send to the target device for non zero input value, defaults to the input value</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_val</td><td>what value to send to the target device for zero input value, defaults to zero</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cache</td><td>what name to use to store current state (optional), can use get(name) to access the current state. if omitted an available name will be calculated</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>callback</td><td>an optional function to call when input data is processed</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>mode</td><td>one of HOLD, TOGGLE, TRIGGER (optional, default=HOLD)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>duplex</td><td>set to true or false (optional, default=true)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>lpd8_fix</td><td>set to true or false, fixes issues with lpd8 pad led turning off on pad release</td></tr></table>
+<p>return value is <strong>cache</strong></p>
+<p>TRIGGER mode is the same as HOLD but will only pass on non-zero events to the target, so behaves somewhere inbetween a HOLD and TOGGLE mode</p>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ route{ 
+    device = &quot;launchpad&quot;, event = &quot;0,0&quot;, 
+    tdevice = &quot;traktor&quot;, tevent = &quot;cue_a&quot;,
+    on_color = lp_hi_yellow, off_color = lp_black
+  }
+ 
+  route{ 
+    device = &quot;launchpad&quot;, event = &quot;0,1&quot;, 
+    tdevice = &quot;traktor&quot;, tevent = &quot;play_a&quot;,
+    mode = TOGGLE,
+    on_color = lp_hi_yellow, off_color = lp_black
+  }
+<p></pre>
+<p>
+</p>
+<hr />
+<h1><a name="open_midi_device__"><code>open_midi_device()</code></a></h1>
+<p>open a midi device</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ open_midi_device(name, type, in_port_name, out_port_name, num_pages)
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>name</td><td>the name to reference this device in the rest of the config</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>type</td><td>the type of device, causes devices/<strong>type</strong>.lua to be loaded</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>in_port_name</td><td>the name of the midi in port, (optional, use &quot;&quot; for none)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>out_port_name</td><td>the name of the midi out port, (optional, use &quot;&quot; for none)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>num_pages</td><td>how many pages/layers to use for this device. values of 1 and 0 have the same meaning  (optional, default 0)</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ open_midi_device(&quot;traktor&quot;, &quot;traktor&quot;, &quot;Traktor to MM&quot;, &quot;MM to Traktor&quot;);
+ open_midi_device(&quot;lp&quot;, &quot;launchpad&quot;, &quot;Launchpad&quot;, &quot;Launchpad&quot;, 4);
+ open_midi_device(&quot;mf1&quot;, &quot;generic&quot;, &quot;MidiFighter1 Input&quot;, &quot;MidiFighter1 Output&quot;)
+<p></pre>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+midimasher: build 20120402 (Windows)
+
+
+select a config > 
+midi: scan devices...
+midi.in.0: 4- Launchpad
+midi.out.0: Microsoft GS Wavetable Synth
+midi.out.1: 4- Launchpad
+hid: scan devices...
+loading: lib/startup.lua
+loading: config/kane-launchpad2.lua
+lp: open midi.in.0: Launchpad
+lp: open midi.out.1: Launchpad
+loading: devices/launchpad.lua
+loading: lib/launchpad.lua
+warning: no midi in device [Traktor to MM]
+warning: no midi out device [MM to Traktor]
+loading: devices/traktor.lua
+loading: lib/traktor.lua
+lp.0: attached lp_left
+lp.0: attached lp_right
+running... <ctrl>-<c> to quit.
+^C

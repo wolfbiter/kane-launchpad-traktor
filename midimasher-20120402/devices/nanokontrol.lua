@@ -1,0 +1,52 @@
+add_control("back", 1, "cc", 47)
+add_control("play", 1, "cc", 45)
+add_control("forward", 1, "cc", 48)
+add_control("loop", 1, "cc", 49)
+add_control("stop", 1, "cc", 46)
+add_control("record", 1, "cc", 44)
+add_control("scene", 1, "note", 66)
+
+add_control("ch1mute", 1, "cc", 23)
+add_control("ch1solo", 1, "cc", 33)
+add_control("ch1pan", 1, "cc", 14)
+add_control("ch1fader", 1, "cc", 2)
+
+add_control("ch2mute", 1, "cc", 24)
+add_control("ch2solo", 1, "cc", 34)
+add_control("ch2pan", 1, "cc", 15)
+add_control("ch2fader", 1, "cc", 3)
+
+add_control("ch3mute", 1, "cc", 25)
+add_control("ch3solo", 1, "cc", 35)
+add_control("ch3pan", 1, "cc", 16)
+add_control("ch3fader", 1, "cc", 4)
+
+add_control("ch4mute", 1, "cc", 26)
+add_control("ch4solo", 1, "cc", 36)
+add_control("ch4pan", 1, "cc", 17)
+add_control("ch4fader", 1, "cc", 5)
+
+add_control("ch5mute", 1, "cc", 27)
+add_control("ch5solo", 1, "cc", 37)
+add_control("ch5pan", 1, "cc", 18)
+add_control("ch5fader", 1, "cc", 6)
+
+add_control("ch6mute", 1, "cc", 28)
+add_control("ch6solo", 1, "cc", 38)
+add_control("ch6pan", 1, "cc", 19)
+add_control("ch6fader", 1, "cc", 8)
+
+add_control("ch7mute", 1, "cc", 29)
+add_control("ch7solo", 1, "cc", 39)
+add_control("ch7pan", 1, "cc", 20)
+add_control("ch7fader", 1, "cc", 9)
+
+add_control("ch8mute", 1, "cc", 30)
+add_control("ch8solo", 1, "cc", 40)
+add_control("ch8pan", 1, "cc", 21)
+add_control("ch8fader", 1, "cc", 12)
+
+add_control("ch9mute", 1, "cc", 31)
+add_control("ch9solo", 1, "cc", 41)
+add_control("ch9pan", 1, "cc", 22)
+add_control("ch9fader", 1, "cc", 13)

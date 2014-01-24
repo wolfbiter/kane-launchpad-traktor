@@ -1,0 +1,8 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=0042BDF0
+eax=00000018 ebx=2F28370E ecx=2F28370E edx=2F28370E esi=00000017 edi=FFFFFFB0
+ebp=0335C4BC esp=0335C494 program=C:\Traktor\midimasher-20120402\mm.exe, pid 3452, thread unknown (0xEA8)
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0335C4BC  0042BDF0  (0335C5AC, 00000001, 0335C544, 779C3C88)
+End of stack trace

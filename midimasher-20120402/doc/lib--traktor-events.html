@@ -1,0 +1,921 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MidiMasher Documentation</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<style>
+H1
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#6060B0;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 18px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H2
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#D0D0FF;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+H3
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	background:#F0F0FF;
+	border-bottom:1px solid;
+	border-color:#E0E0E0;
+	color:#404080;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H4
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	color:#40a;
+	font-size: 14px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+CODE
+{
+	font-size: 16px;
+}
+
+TT
+{
+	font-size: 16px;
+}
+
+BODY {
+  background: white;
+  color: black;
+  font-family: arial,sans-serif;
+  margin: 0;
+  padding: 1ex;
+}
+TABLE {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 0;
+  color: inherit;
+}
+IMG { border: 0; }
+FORM { margin: 0; }
+input { margin: 2px; }
+A.fred {
+  text-decoration: none;
+}
+A:link, A:visited {
+  background: transparent;
+  color: #006699;
+}
+TD {
+  margin: 0;
+  padding: 0;
+}
+DIV {
+  border-width: 0;
+}
+DT {
+  margin-top: 1em;
+}
+TH {
+  /*background: #bbbbbb;*/
+  color: inherit;
+  padding: 0.4ex 1ex;
+  text-align: left;
+}
+TH A:link, TH A:visited {
+  background: transparent;
+  color: black;
+}
+A.m:link, A.m:visited {
+  background: #006699;
+  color: white;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:link, A.o:visited {
+  background: #006699;
+  color: #ccffcc;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+A.m:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+table.dlsip     {
+  background: #dddddd;
+  border: 0.4ex solid #dddddd;
+}
+PRE     {
+  background: #eeeeee;
+  border: 1px solid #888888;
+  color: black;
+  padding-top: 1em;
+  white-space: pre;
+}
+IMG     {
+  vertical-align: top;
+}
+A  {
+  text-decoration: none;
+}
+LI {
+  line-height: 1.2em;
+  list-style-type: none;
+}
+
+usage th { background-color: white }
+usage td { background-color: white }
+usage * param { color: #ccc }
+
+</style></head>
+
+<body style="background-color: white">
+<h1><a style='color:white'href="http://midimasher.djism.com/">Home</a> :: <a href='index.html' style='color:white'>MidiMasher Documentation</a> : lib/traktor-events.lua</h1>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#traktor_event_names">Traktor Event Names</a></li>
+	<ul>
+
+		<li><a href="#transport_decks_a_b">transport decks a+b</a></li>
+		<li><a href="#cue___loops">cue / loops</a></li>
+		<li><a href="#mixer">mixer</a></li>
+		<li><a href="#fx_group">fx group</a></li>
+		<li><a href="#fx_single">fx single</a></li>
+		<li><a href="#tempo">tempo</a></li>
+		<li><a href="#loop_recorder">loop recorder</a></li>
+		<li><a href="#sample_decks_c_d">sample decks c+d</a></li>
+		<li><a href="#output">output</a></li>
+		<li><a href="#layout">layout</a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="traktor_event_names">Traktor Event Names</a></h1>
+<p>
+</p>
+<h2><a name="transport_decks_a_b">transport decks a+b</a></h2>
+<pre>
+ play_a
+ cue_a
+ cup_a
+ seek_enc_a
+ scratch_on_a
+ scratch_on_direct_a
+ scratch_a
+ jog_scratch_tempo_bend_a
+ play_b
+ cue_b
+ cup_b
+ seek_enc_b
+ scratch_on_b
+ scratch_on_direct_b
+ scratch_b
+ jog_scratch_tempo_bend_b
+<p></pre>
+<p>
+</p>
+<h2><a name="cue___loops">cue / loops</a></h2>
+<pre>
+ loop_in_set_cue_a
+ loop_in_set_cue_b
+ loop_out_a
+ loop_out_b
+ cue_set_store_a
+ cue_set_store_b
+ store_cue_loop_a
+ store_cue_loop_b
+ delete_cue_loop_a
+ delete_cue_loop_b
+ loop_size_inc_a
+ loop_size_inc_b
+ loop_size_dec_a
+ loop_size_dec_b
+ loop_size_set_/32_a
+ loop_size_set_/16_a
+ loop_size_set_/8_a
+ loop_size_set_/4_a
+ loop_size_set_/2_a
+ loop_size_set_1_a
+ loop_size_set_2_a
+ loop_size_set_4_a
+ loop_size_set_8_a
+ loop_size_set_16_a
+ loop_size_set_32_a
+ loop_size_set_/32_b
+ loop_size_set_/16_b
+ loop_size_set_/8_b
+ loop_size_set_/4_b
+ loop_size_set_/2_b
+ loop_size_set_1_b
+ loop_size_set_2_b
+ loop_size_set_4_b
+ loop_size_set_8_b
+ loop_size_set_16_b
+ loop_size_set_32_b
+ loop_set_a
+ loop_set_b
+ loop_active_a
+ loop_active_b
+ loop_size_encoder_a
+ loop_size_encoder_b
+ loop_size_a
+ loop_size_b
+ cue_loop_move_size_inc_a
+ cue_loop_move_size_dec_a
+ cue_loop_move_size_inc_b
+ cue_loop_move_size_dec_b
+ cue_loop_move_size_beatjump_a
+ cue_loop_move_size_loop_a
+ cue_loop_move_size_loop_in_a
+ cue_loop_move_size_loop_out_a
+ cue_loop_move_size_beatjump_b
+ cue_loop_move_size_loop_b
+ cue_loop_move_size_loop_in_b
+ cue_loop_move_size_loop_out_b
+ cue_loop_move_back_a
+ cue_loop_move_forward_a
+ cue_loop_move_back_b
+ cue_loop_move_forward_b
+ next_prev_cue_loop_previous_a
+ next_prev_cue_loop_next_a
+ next_prev_cue_loop_previous_b
+ next_prev_cue_loop_next_b
+ jump_to_act_cue_a
+ jump_to_act_cue_b
+ map_hotcue_a
+ map_hotcue_b
+ select_set_store_hotcue_1_a
+ select_set_store_hotcue_2_a
+ select_set_store_hotcue_3_a
+ select_set_store_hotcue_4_a
+ select_set_store_hotcue_5_a
+ select_set_store_hotcue_6_a
+ select_set_store_hotcue_7_a
+ select_set_store_hotcue_8_a
+ select_set_store_hotcue_1_b
+ select_set_store_hotcue_2_b
+ select_set_store_hotcue_3_b
+ select_set_store_hotcue_4_b
+ select_set_store_hotcue_5_b
+ select_set_store_hotcue_6_b
+ select_set_store_hotcue_7_b
+ select_set_store_hotcue_8_b
+ delete_hotcue_1_a
+ delete_hotcue_2_a
+ delete_hotcue_3_a
+ delete_hotcue_4_a
+ delete_hotcue_5_a
+ delete_hotcue_6_a
+ delete_hotcue_7_a
+ delete_hotcue_8_a
+ delete_hotcue_1_b
+ delete_hotcue_2_b
+ delete_hotcue_3_b
+ delete_hotcue_4_b
+ delete_hotcue_5_b
+ delete_hotcue_6_b
+ delete_hotcue_7_b
+ delete_hotcue_8_b
+ beatjump_-loop_a
+ beatjump_-32_a
+ beatjump_-16_a
+ beatjump_-8_a
+ beatjump_-4_a
+ beatjump_-2_a
+ beatjump_-1_a
+ beatjump_-/2_a
+ beatjump_-/4_a
+ beatjump_-/8_a
+ beatjump_-/16_a
+ beatjump_-fine_a
+ beatjump_-ultrafine_a
+ beatjump_+ultrafine_a
+ beatjump_+fine_a
+ beatjump_+/16_a
+ beatjump_+/8_a
+ beatjump_+/4_a
+ beatjump_+/2_a
+ beatjump_+1_a
+ beatjump_+2_a
+ beatjump_+4_a
+ beatjump_+8_a
+ beatjump_+16_a
+ beatjump_+32_a
+ beatjump_+loop_a
+ beatjump_-loop_b
+ beatjump_-32_b
+ beatjump_-16_b
+ beatjump_-8_b
+ beatjump_-4_b
+ beatjump_-2_b
+ beatjump_-1_b
+ beatjump_-/2_b
+ beatjump_-/4_b
+ beatjump_-/8_b
+ beatjump_-/16_b
+ beatjump_-fine_b
+ beatjump_-ultrafine_b
+ beatjump_+ultrafine_b
+ beatjump_+fine_b
+ beatjump_+/16_b
+ beatjump_+/8_b
+ beatjump_+/4_b
+ beatjump_+/2_b
+ beatjump_+1_b
+ beatjump_+2_b
+ beatjump_+4_b
+ beatjump_+8_b
+ beatjump_+16_b
+ beatjump_+32_b
+ beatjump_+loop_b
+ hotcue1_state_a
+ hotcue2_state_a
+ hotcue3_state_a
+ hotcue4_state_a
+ hotcue5_state_a
+ hotcue6_state_a
+ hotcue7_state_a
+ hotcue8_state_a
+ hotcue1_state_b
+ hotcue2_state_b
+ hotcue3_state_b
+ hotcue4_state_b
+ hotcue5_state_b
+ hotcue6_state_b
+ hotcue7_state_b
+ hotcue8_state_b
+ cue_set_and_store_a
+ cue_set_and_store_b
+ jump_to_active_cue_point_a
+ jump_to_active_cue_point_b
+<p></pre>
+<p>
+</p>
+<h2><a name="mixer">mixer</a></h2>
+<pre>
+ eq_high_a
+ eq_high_b
+ eq_high_kill_a
+ eq_high_kill_b
+ eq_mid_a
+ eq_mid_b
+ eq_mid_kill_a
+ eq_mid_kill_b
+ eq_low_a
+ eq_low_b
+ eq_low_kill_a
+ eq_low_kill_b
+ filter_a
+ filter_b
+ filter_on_a
+ filter_on_b
+ volume_fader_a
+ volume_fader_b
+ effect_unit_1_on_a
+ effect_unit_1_on_b
+ effect_unit_2_on_a
+ effect_unit_2_on_b
+ effect_unit_3_on_a
+ effect_unit_3_on_b
+ effect_unit_4_on_a
+ effect_unit_4_on_b
+ gain_a
+ gain_b
+ monitor_cue_a
+ monitor_cue_b
+ monitor_cue_c
+ monitor_cue_d
+ x_fader
+ master_volume
+ monitor_volume
+ monitor_mix
+<p></pre>
+<p>
+</p>
+<h2><a name="fx_group">fx group</a></h2>
+<pre>
+ effect_1_select_unit_1
+ effect_1_select_unit_2
+ effect_1_select_unit_3
+ effect_1_select_unit_4
+ effect_2_select_unit_1
+ effect_2_select_unit_2
+ effect_2_select_unit_3
+ effect_2_select_unit_4
+ effect_3_select_unit_1
+ effect_3_select_unit_2
+ effect_3_select_unit_3
+ effect_3_select_unit_4
+ effect_1_select_inc_unit_1
+ effect_1_select_inc_unit_2
+ effect_1_select_inc_unit_3
+ effect_1_select_inc_unit_4
+ effect_1_select_dec_unit_1
+ effect_1_select_dec_unit_2
+ effect_1_select_dec_unit_3
+ effect_1_select_dec_unit_4
+ effect_2_select_inc_unit_1
+ effect_2_select_inc_unit_2
+ effect_2_select_inc_unit_3
+ effect_2_select_inc_unit_4
+ effect_2_select_dec_unit_1
+ effect_2_select_dec_unit_2
+ effect_2_select_dec_unit_3
+ effect_2_select_dec_unit_4
+ effect_3_select_inc_unit_1
+ effect_3_select_inc_unit_2
+ effect_3_select_inc_unit_3
+ effect_3_select_inc_unit_4
+ effect_3_select_dec_unit_1
+ effect_3_select_dec_unit_2
+ effect_3_select_dec_unit_3
+ effect_3_select_dec_unit_4
+ dry_wet_group_unit_1
+ dry_wet_group_unit_2
+ dry_wet_group_unit_3
+ dry_wet_group_unit_4
+ effect_1_amount_unit_1
+ effect_1_amount_unit_2
+ effect_1_amount_unit_3
+ effect_1_amount_unit_4
+ effect_2_amount_unit_1
+ effect_2_amount_unit_2
+ effect_2_amount_unit_3
+ effect_2_amount_unit_4
+ effect_3_amount_unit_1
+ effect_3_amount_unit_2
+ effect_3_amount_unit_3
+ effect_3_amount_unit_4
+ effect_1_amount_inc_unit_1
+ effect_1_amount_inc_unit_2
+ effect_1_amount_inc_unit_3
+ effect_1_amount_inc_unit_4
+ effect_1_amount_dec_unit_1
+ effect_1_amount_dec_unit_2
+ effect_1_amount_dec_unit_3
+ effect_1_amount_dec_unit_4
+ effect_2_amount_inc_unit_1
+ effect_2_amount_inc_unit_2
+ effect_2_amount_inc_unit_3
+ effect_2_amount_inc_unit_4
+ effect_2_amount_dec_unit_1
+ effect_2_amount_dec_unit_2
+ effect_2_amount_dec_unit_3
+ effect_2_amount_dec_unit_4
+ effect_3_amount_inc_unit_1
+ effect_3_amount_inc_unit_2
+ effect_3_amount_inc_unit_3
+ effect_3_amount_inc_unit_4
+ effect_3_amount_dec_unit_1
+ effect_3_amount_dec_unit_2
+ effect_3_amount_dec_unit_3
+ effect_3_amount_dec_unit_4
+ effect_1_on_unit_1
+ effect_1_on_unit_2
+ effect_1_on_unit_3
+ effect_1_on_unit_4
+ effect_2_on_unit_1
+ effect_2_on_unit_2
+ effect_2_on_unit_3
+ effect_2_on_unit_4
+ effect_3_on_unit_1
+ effect_3_on_unit_2
+ effect_3_on_unit_3
+ effect_3_on_unit_4
+<p></pre>
+<p>
+</p>
+<h2><a name="fx_single">fx single</a></h2>
+<pre>
+ effect_select_unit_1
+ effect_select_unit_2
+ effect_select_unit_3
+ effect_select_unit_4
+ effect_select_inc_unit_1
+ effect_select_inc_unit_2
+ effect_select_inc_unit_3
+ effect_select_inc_unit_4
+ effect_select_dec_unit_1
+ effect_select_dec_unit_2
+ effect_select_dec_unit_3
+ effect_select_dec_unit_4
+ effect_on_unit_1
+ effect_on_unit_2
+ effect_on_unit_3
+ effect_on_unit_4
+ effect_param_reset_unit_1
+ effect_param_reset_unit_2
+ effect_param_reset_unit_3
+ effect_param_reset_unit_4
+ effect_button_1_unit_1
+ effect_button_1_unit_2
+ effect_button_1_unit_3
+ effect_button_1_unit_4
+ effect_button_2_unit_1
+ effect_button_2_unit_2
+ effect_button_2_unit_3
+ effect_button_2_unit_4
+ dry_wet_single_unit_1
+ dry_wet_single_unit_2
+ dry_wet_single_unit_3
+ dry_wet_single_unit_4
+ effect_param_1_unit_1
+ effect_param_1_unit_2
+ effect_param_1_unit_3
+ effect_param_1_unit_4
+ effect_param_1_inc_unit_1
+ effect_param_1_inc_unit_2
+ effect_param_1_inc_unit_3
+ effect_param_1_inc_unit_4
+ effect_param_1_dec_unit_1
+ effect_param_1_dec_unit_2
+ effect_param_1_dec_unit_3
+ effect_param_1_dec_unit_4
+ effect_param_2_unit_1
+ effect_param_2_unit_2
+ effect_param_2_unit_3
+ effect_param_2_unit_4
+ effect_param_2_inc_unit_1
+ effect_param_2_inc_unit_2
+ effect_param_2_inc_unit_3
+ effect_param_2_inc_unit_4
+ effect_param_2_dec_unit_1
+ effect_param_2_dec_unit_2
+ effect_param_2_dec_unit_3
+ effect_param_2_dec_unit_4
+ effect_param_3_unit_1
+ effect_param_3_unit_2
+ effect_param_3_unit_3
+ effect_param_3_unit_4
+ effect_param_3_inc_unit_1
+ effect_param_3_inc_unit_2
+ effect_param_3_inc_unit_3
+ effect_param_3_inc_unit_4
+ effect_param_3_dec_unit_1
+ effect_param_3_dec_unit_2
+ effect_param_3_dec_unit_3
+ effect_param_3_dec_unit_4
+<p></pre>
+<p>
+</p>
+<h2><a name="tempo">tempo</a></h2>
+<pre>
+ beat_sync_a
+ beat_sync_b
+ phase_sync_a
+ phase_sync_b
+ tempo_sync_a
+ tempo_sync_b
+ tempo_bend_down_a
+ tempo_bend_down_b
+ tempo_bend_up_a
+ tempo_bend_up_b
+ tempo_bend_encoder_a
+ tempo_bend_encoder_b
+ tempo_fader_a
+ tempo_fader_b
+ tempo_fader_inc_a
+ tempo_fader_inc_b
+ tempo_fader_dec_a
+ tempo_fader_dec_b
+<p></pre>
+<p>
+</p>
+<h2><a name="loop_recorder">loop recorder</a></h2>
+<pre>
+ loop_recorder_record
+ loop_recorder_size
+ loop_recorder_size_inc
+ loop_recorder_size_dec
+ loop_recorder_size_4
+ loop_recorder_size_8
+ loop_recorder_size_16
+ loop_recorder_size_32
+ loop_recorder_dry_wet
+ loop_recorder_play_pause
+ loop_recorder_del
+ loop_recorder_undo_redo
+ loop_recorder_dry_wet_up
+ loop_recorder_dry_wet_down
+ loop_recorder_dry_wet_half
+<p></pre>
+<p>
+</p>
+<h2><a name="sample_decks_c_d">sample decks c+d</a></h2>
+<pre>
+ sample_deck_play_c1
+ sample_deck_play_c2
+ sample_deck_play_c3
+ sample_deck_play_c4
+ sample_deck_play_d1
+ sample_deck_play_d2
+ sample_deck_play_d3
+ sample_deck_play_d4
+ slot_start_stop_c1
+ slot_start_stop_c2
+ slot_start_stop_c3
+ slot_start_stop_c4
+ slot_start_stop_d1
+ slot_start_stop_d2
+ slot_start_stop_d3
+ slot_start_stop_d4
+ load_from_list_c1
+ load_from_list_c2
+ load_from_list_c3
+ load_from_list_c4
+ load_from_list_d1
+ load_from_list_d2
+ load_from_list_d3
+ load_from_list_d4
+ load_from_deck_c1
+ load_from_deck_c2
+ load_from_deck_c3
+ load_from_deck_c4
+ load_from_deck_d1
+ load_from_deck_d2
+ load_from_deck_d3
+ load_from_deck_d4
+ group_play_mode_one_shot_c
+ group_play_mode_looped_c
+ group_play_mode_one_shot_d
+ group_play_mode_looped_d
+ group_play_mode_c
+ group_play_mode_d
+ clear_slot_c1
+ clear_slot_c2
+ clear_slot_c3
+ clear_slot_c4
+ clear_slot_d1
+ clear_slot_d2
+ clear_slot_d3
+ clear_slot_d4
+ slot_volume_c1
+ slot_volume_c2
+ slot_volume_c3
+ slot_volume_c4
+ slot_volume_d1
+ slot_volume_d2
+ slot_volume_d3
+ slot_volume_d4
+ slot_volume_up_c1
+ slot_volume_up_c2
+ slot_volume_up_c3
+ slot_volume_up_c4
+ slot_volume_up_d1
+ slot_volume_up_d2
+ slot_volume_up_d3
+ slot_volume_up_d4
+ slot_volume_down_c1
+ slot_volume_down_c2
+ slot_volume_down_c3
+ slot_volume_down_c4
+ slot_volume_down_d1
+ slot_volume_down_d2
+ slot_volume_down_d3
+ slot_volume_down_d4
+ slot_filter_c1
+ slot_filter_c2
+ slot_filter_c3
+ slot_filter_c4
+ slot_filter_d1
+ slot_filter_d2
+ slot_filter_d3
+ slot_filter_d4
+ slot_filter_amount_c1
+ slot_filter_amount_c2
+ slot_filter_amount_c3
+ slot_filter_amount_c4
+ slot_filter_amount_d1
+ slot_filter_amount_d2
+ slot_filter_amount_d3
+ slot_filter_amount_d4
+ slot_filter_up_c1
+ slot_filter_up_c2
+ slot_filter_up_c3
+ slot_filter_up_c4
+ slot_filter_up_d1
+ slot_filter_up_d2
+ slot_filter_up_d3
+ slot_filter_up_d4
+ slot_filter_down_c1
+ slot_filter_down_c2
+ slot_filter_down_c3
+ slot_filter_down_c4
+ slot_filter_down_d1
+ slot_filter_down_d2
+ slot_filter_down_d3
+ slot_filter_down_d4
+ sample_play_primary_c1
+ sample_play_primary_c2
+ sample_play_primary_c3
+ sample_play_primary_c4
+ sample_play_primary_d1
+ sample_play_primary_d2
+ sample_play_primary_d3
+ sample_play_primary_d4
+ sample_play_secondary_c1
+ sample_play_secondary_c2
+ sample_play_secondary_c3
+ sample_play_secondary_c4
+ sample_play_secondary_d1
+ sample_play_secondary_d2
+ sample_play_secondary_d3
+ sample_play_secondary_d4
+ group_play_c
+ group_play_d
+ group_trigger_c
+ group_trigger_d
+ slot_mute_unmute_c1
+ slot_mute_unmute_c2
+ slot_mute_unmute_c3
+ slot_mute_unmute_c4
+ slot_mute_unmute_d1
+ slot_mute_unmute_d2
+ slot_mute_unmute_d3
+ slot_mute_unmute_d4
+ sample_trigger_c1
+ sample_trigger_c2
+ sample_trigger_c3
+ sample_trigger_c4
+ sample_trigger_d1
+ sample_trigger_d2
+ sample_trigger_d3
+ sample_trigger_d4
+ slot_retrigger_c1
+ slot_retrigger_c2
+ slot_retrigger_c3
+ slot_retrigger_c4
+ slot_retrigger_d1
+ slot_retrigger_d2
+ slot_retrigger_d3
+ slot_retrigger_d4
+ copy_from_loop_recorder_c1
+ copy_from_loop_recorder_c2
+ copy_from_loop_recorder_c3
+ copy_from_loop_recorder_c4
+ copy_from_loop_recorder_d1
+ copy_from_loop_recorder_d2
+ copy_from_loop_recorder_d3
+ copy_from_loop_recorder_d4
+ slot_play_mode_one_shot_c1
+ slot_play_mode_one_shot_c2
+ slot_play_mode_one_shot_c3
+ slot_play_mode_one_shot_c4
+ slot_play_mode_one_shot_d1
+ slot_play_mode_one_shot_d2
+ slot_play_mode_one_shot_d3
+ slot_play_mode_one_shot_d4
+ slot_play_mode_looped_c1
+ slot_play_mode_looped_c2
+ slot_play_mode_looped_c3
+ slot_play_mode_looped_c4
+ slot_play_mode_looped_d1
+ slot_play_mode_looped_d2
+ slot_play_mode_looped_d3
+ slot_play_mode_looped_d4
+ slot_play_mode_c1
+ slot_play_mode_c2
+ slot_play_mode_c3
+ slot_play_mode_c4
+ slot_play_mode_d1
+ slot_play_mode_d2
+ slot_play_mode_d3
+ slot_play_mode_d4
+ slot_size_x2_c1
+ slot_size_x2_c2
+ slot_size_x2_c3
+ slot_size_x2_c4
+ slot_size_x2_d1
+ slot_size_x2_d2
+ slot_size_x2_d3
+ slot_size_x2_d4
+ slot_size_/2_c1
+ slot_size_/2_c2
+ slot_size_/2_c3
+ slot_size_/2_c4
+ slot_size_/2_d1
+ slot_size_/2_d2
+ slot_size_/2_d3
+ slot_size_/2_d4
+ slot_size_reset_c1
+ slot_size_reset_c2
+ slot_size_reset_c3
+ slot_size_reset_c4
+ slot_size_reset_d1
+ slot_size_reset_d2
+ slot_size_reset_d3
+ slot_size_reset_d4
+ slot_tempo_bend_up_c1
+ slot_tempo_bend_up_c2
+ slot_tempo_bend_up_c3
+ slot_tempo_bend_up_c4
+ slot_tempo_bend_up_d1
+ slot_tempo_bend_up_d2
+ slot_tempo_bend_up_d3
+ slot_tempo_bend_up_d4
+ slot_tempo_bend_down_c1
+ slot_tempo_bend_down_c2
+ slot_tempo_bend_down_c3
+ slot_tempo_bend_down_c4
+ slot_tempo_bend_down_d1
+ slot_tempo_bend_down_d2
+ slot_tempo_bend_down_d3
+ slot_tempo_bend_down_d4
+ seek_inc_a
+ seek_dec_a
+ seek_inc_b
+ seek_dec_b
+<p></pre>
+<p>
+</p>
+<h2><a name="output">output</a></h2>
+<pre>
+ beat_phase_monitor_a
+ beat_phase_monitor_b
+ monitor_deck_afl_mono_a
+ monitor_deck_afl_mono_b
+ track_end_warning_a
+ track_end_warning_b
+ master_tempo_clock_send
+ master_tempo_clock_sync_midi
+ seek_position_a
+ seek_position_b
+ master_level
+ master_level_left
+ master_level_right
+ send_monitor_state
+ show_slider_values
+<p></pre>
+<p>
+</p>
+<h2><a name="layout">layout</a></h2>
+<pre>
+ snap_mode
+ quant_on
+ fx_panel_mode_unit_1_group
+ fx_panel_mode_unit_1_single
+ fx_panel_mode_unit_2_group
+ fx_panel_mode_unit_2_single
+ fx_panel_mode_unit_3_group
+ fx_panel_mode_unit_3_single
+ fx_panel_mode_unit_4_group
+ fx_panel_mode_unit_4_single
+<p></pre>
+
+</body>
+
+</html>

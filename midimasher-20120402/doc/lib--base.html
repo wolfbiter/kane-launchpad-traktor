@@ -1,0 +1,457 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MidiMasher Documentation</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<style>
+H1
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#6060B0;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 18px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H2
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+	background:#D0D0FF;
+	border-bottom:1px solid;
+	border-color:#000;
+	color:white;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+H3
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	background:#F0F0FF;
+	border-bottom:1px solid;
+	border-color:#E0E0E0;
+	color:#404080;
+	font-size: 16px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+H4
+{
+	margin:0px;
+	padding:0px;
+	height:auto;
+	color:#40a;
+	font-size: 14px;
+	padding:5px 5px 5px 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+CODE
+{
+	font-size: 16px;
+}
+
+TT
+{
+	font-size: 16px;
+}
+
+BODY {
+  background: white;
+  color: black;
+  font-family: arial,sans-serif;
+  margin: 0;
+  padding: 1ex;
+}
+TABLE {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 0;
+  color: inherit;
+}
+IMG { border: 0; }
+FORM { margin: 0; }
+input { margin: 2px; }
+A.fred {
+  text-decoration: none;
+}
+A:link, A:visited {
+  background: transparent;
+  color: #006699;
+}
+TD {
+  margin: 0;
+  padding: 0;
+}
+DIV {
+  border-width: 0;
+}
+DT {
+  margin-top: 1em;
+}
+TH {
+  /*background: #bbbbbb;*/
+  color: inherit;
+  padding: 0.4ex 1ex;
+  text-align: left;
+}
+TH A:link, TH A:visited {
+  background: transparent;
+  color: black;
+}
+A.m:link, A.m:visited {
+  background: #006699;
+  color: white;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:link, A.o:visited {
+  background: #006699;
+  color: #ccffcc;
+  font: bold 10pt Arial,Helvetica,sans-serif;
+  text-decoration: none;
+}
+A.o:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+A.m:hover {
+  background: transparent;
+  color: #ff6600;
+  text-decoration: underline;
+}
+table.dlsip     {
+  background: #dddddd;
+  border: 0.4ex solid #dddddd;
+}
+PRE     {
+  background: #eeeeee;
+  border: 1px solid #888888;
+  color: black;
+  padding-top: 1em;
+  white-space: pre;
+}
+IMG     {
+  vertical-align: top;
+}
+A  {
+  text-decoration: none;
+}
+LI {
+  line-height: 1.2em;
+  list-style-type: none;
+}
+
+usage th { background-color: white }
+usage td { background-color: white }
+usage * param { color: #ccc }
+
+</style></head>
+
+<body style="background-color: white">
+<h1><a style='color:white'href="http://midimasher.djism.com/">Home</a> :: <a href='index.html' style='color:white'>MidiMasher Documentation</a> : lib/base.lua</h1>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#pipe__"><code>pipe()</code></a></li>
+	
+
+	<li><a href="#join__"><code>join()</code></a></li>
+	<li><a href="#trigger__"><code>trigger()</code></a></li>
+	
+
+	<li><a href="#lpd8_trigger__"><code>lpd8_trigger()</code></a></li>
+	<li><a href="#button__"><code>button()</code></a></li>
+	
+
+	<li><a href="#toggle__"><code>toggle()</code></a></li>
+	
+
+	<li><a href="#hold_modifier__"><code>hold_modifier()</code></a></li>
+	
+
+	<li><a href="#toggle_modifier__"><code>toggle_modifier()</code></a></li>
+	<li><a href="#pipe_modifier__"><code>pipe_modifier()</code></a></li>
+	<li><a href="#button_shift__"><code>button_shift()</code></a></li>
+	
+
+	<li><a href="#pipe_shift__"><code>pipe_shift()</code></a></li>
+	
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="pipe__"><code>pipe()</code></a></h1>
+<p>send an event to an output device when a specified event is received by the input device</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ pipe(d1, e1, p1, d2, e2, p2, [cb])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback function (optional)</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ pipe(&quot;launchpad&quot;, &quot;0,0&quot;, 0, &quot;traktor&quot;, &quot;cue_a&quot;, 0)
+
+ pipe(&quot;launchpad&quot;, &quot;0,0&quot;, 0, &quot;traktor&quot;, &quot;cue_a&quot;, 0, function(d, e, v, p)
+   print(&quot;sending cue_a message to traktor with value of&quot; .. v)
+ end)
+<p></pre>
+<p>
+</p>
+<hr />
+<h1><a name="join__"><code>join()</code></a></h1>
+<p>duplex version of <code>pipe()</code></p>
+<p>
+</p>
+<hr />
+<h1><a name="trigger__"><code>trigger()</code></a></h1>
+<p>only send non-zero events onto target device, set local led colors</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ trigger(d1, e1, p1, on_color, off_color, d2, e2, p2, [cb])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local led on color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local led off color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback function (optional)</td></tr></table>
+<p>
+</p>
+<hr />
+<h1><a name="lpd8_trigger__"><code>lpd8_trigger()</code></a></h1>
+<p>the same as <code>trigger()</code> with these two additions:</p>
+<p>fix for the problem where the lpd8 led turns off when u release the pad even tho a midi message may have been sent to it to turn it on</p>
+<p>send an OFF message 3ms after the ON so that the lpd8 PC mode pads can also be used</p>
+<p>
+</p>
+<hr />
+<h1><a name="button__"><code>button()</code></a></h1>
+<p>similar to <code>pipe()</code> but with local led colors</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ button(d1, e1, p1, on_color, off_color, d2, e2, p2, [cb])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local led on color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local led off color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback function (optional)</td></tr></table>
+<p>
+</p>
+<hr />
+<h1><a name="toggle__"><code>toggle()</code></a></h1>
+<p>same as <code>button()</code> but with toggle behaviour</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ toggle(d1, e1, p1, on_color, off_color, d2, e2, p2, [cb])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local led on color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local led off color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback function (optional)</td></tr></table>
+<p>return value is the name of the modifier being used to store the current <em>toggle</em> status</p>
+<p>
+</p>
+<hr />
+<h1><a name="hold_modifier__"><code>hold_modifier()</code></a></h1>
+<p>sets a value that can be accessed via <code>get()</code> when pressed instead of sending any data onto another device</p>
+<p>duplex, so if the modifier is changed via any other device/code then the local led status will reflect it</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ hold_modifier(d1, e1, p1, on_color, off_color, name, [cb])
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local led on color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local led off color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>name</td><td>the name for the modifier</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback function (optional)</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+  hold_modifier(&quot;lpd8&quot;, &quot;0,0&quot;, 1, 127, 0, &quot;shift&quot;)
+  my_val = get(&quot;shift&quot;)
+  set(&quot;shift&quot;, 127)
+  set(&quot;shift&quot;, 0)
+<p></pre>
+<p>
+</p>
+<hr />
+<h1><a name="toggle_modifier__"><code>toggle_modifier()</code></a></h1>
+<p>same as <code>hold_modifier()</code> but with toggle behaviour</p>
+<p>
+</p>
+<hr />
+<h1><a name="pipe_modifier__"><code>pipe_modifier()</code></a></h1>
+<p>same as <code>hold_modifier()</code> but with non-duplex</p>
+<p>
+</p>
+<hr />
+<h1><a name="button_shift__"><code>button_shift()</code></a></h1>
+<p>behaves like <code>button()</code> but varies the output event based on the current status of a modifier allowing a button to have a different behaviour when another button is pressed like sending &quot;tempo_bend_down_a&quot; as opposed to &quot;tempo_bend_up_a&quot;</p>
+<p>it also has 2 additional <em>inline</em> callbacks that if set must return the value to be sent out, <code>cb1</code> is called if the modifier is not set and <code>cb2</code> if it is</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ button_shift(d1, e1, p1, on_color, off_color, d2, e2, e2s, shift, p2)
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>on_color</td><td>local led on color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>off_color</td><td>local led off color</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out when shift not pressed</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2s</td><td>event name out when shift is pressed</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>shift</td><td>the name of the modifier</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback called after each event (optional, default <code>nil</code>)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb1</td><td>callback that is called <strong>before</strong> sending out the value when shift is not set (optional, default <code>nil</code>)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb2</td><td>callback that is called <strong>before</strong> sending out the value when shift is set (optional, default <code>nil</code>)</td></tr></table>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<pre>
+ -- first create a shift control that will set &quot;myshift&quot; on the &quot;arm&quot; 
+ -- of the launchpad
+
+ hold_modifier(&quot;lp&quot;, &quot;arm&quot;, 0, lp_hi_yellow, lp_lo_red, &quot;myshift&quot;)
+
+ -- now add a dual function control (at row 0, column 3) on the same controller
+ -- that will send &quot;tempo_bend_up_a&quot; to traktor, unless the shift button has 
+ -- been held down, in which case it will send &quot;tempo_bend_down_a&quot;
+
+ button_shift(&quot;lp&quot;, &quot;0,3&quot;, 1, lp_hi_yellow, lp_lo_red, &quot;traktor&quot;, &quot;tempo_bend_up_a&quot;, &quot;tempo_bend_down_a&quot;, &quot;myshift&quot;)
+<p></pre>
+<p>
+</p>
+<hr />
+<h1><a name="pipe_shift__"><code>pipe_shift()</code></a></h1>
+<p>behaves like <code>pipe()</code> but varies the output based on a shift the same as <code>button_shift()</code></p>
+<p>this could be used to enable fader fx for example like on the twitch by using the fader to control an effects param when a &quot;fader_fx&quot; shift is toggled on
+and inverting the value passed through so that the effects level is at max when the fader is at minimum</p>
+<p>
+</p>
+<h2><a name="usage">Usage</a></h2>
+<pre>
+ pipe_shift(d1, e1, p1, d2, e2, e2s, shift, p2, cb, cb1, cb2)
+<p></pre>
+<table class='usage'><tr><td style='padding:4px;font-weight:bold;color:#888'>Param</td><td style='padding:4px;font-weight:bold;color:#888'>Description</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d1</td><td>device name in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e1</td><td>event name(s) in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p1</td><td>page, use 0 for all pages in</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>d2</td><td>device name out</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2</td><td>event name out when shift not pressed</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>e2s</td><td>event name out when shift is pressed</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>shift</td><td>the name of the modifier</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>p2</td><td>page out (optional, default 0)</td></tr>
+<tr><td style='color:#44f;padding-left:16px;padding-right:4px'>cb</td><td>callback called after each event (optional, default <code>nil</code>)</td></tr></table>
+<p>the <code>cb</code> param can either be a single function that gets called after each event or a <code>table</code> that defines up to 3 callbacks</p>
+<pre>
+  cb = function1
+<p></pre>
+<p>or</p>
+<pre>
+  { cb = function1, cb_shift = function2, cb_noshift = function3 }
+<p></pre>
+<p><code>cb_shift</code> gets called only when the modifier is non zero and <code>cb_noshift</code> gets called when the modifer is zero.
+each is called <strong>before</strong> the value is sent out to the target device and the function must return what value is to be sent</p>
+<p>
+</p>
+<h2><a name="examples">Examples</a></h2>
+<p>first create two toggle buttons that will enable fader effects mode for decks a+b independantly and enable/disable the effects unit</p>
+<pre>
+ faderfx_a = toggle_modifier(&quot;djm101&quot;, &quot;pfl_a&quot;, 0, ON, OFF, nil, function(d, e, v, p)
+     if v &gt; 0 then send(&quot;traktor&quot;, &quot;dry_wet_group_unit_1&quot;, 0) end
+     send(&quot;traktor&quot;, &quot;effect_unit_1_on_a&quot;, v)
+ end)
+
+ faderfx_b = toggle_modifier(&quot;djm101&quot;, &quot;pfl_b&quot;, 0, ON, OFF, nil, function(d, e, v, p)
+     if v &gt; 0 then send(&quot;traktor&quot;, &quot;dry_wet_group_unit_1&quot;, 0) end
+     send(&quot;traktor&quot;, &quot;effect_unit_1_on_b&quot;, v)
+ end)
+<p></pre>
+<p>use a fader to control deck levels as normal when the toggle is not engaged. when the toggle is set switch to
+controlling the effects unit dry/wet parameter but inverted so that the effect will be at full wet when the 
+fader is at minimum</p>
+<pre>
+ pipe_shift(&quot;djm101&quot;, &quot;volume_fader_a&quot;, 0, &quot;traktor&quot;, &quot;volume_fader_a&quot;, &quot;dry_wet_group_unit_1&quot;, faderfx_a, 0, { cb_shift = invert_value_cb})
+ pipe_shift(&quot;djm101&quot;, &quot;volume_fader_b&quot;, 0, &quot;traktor&quot;, &quot;volume_fader_b&quot;, &quot;dry_wet_group_unit_1&quot;, faderfx_b, 0, { cb_shift = invert_value_cb})
+<p></pre>
+
+</body>
+
+</html>

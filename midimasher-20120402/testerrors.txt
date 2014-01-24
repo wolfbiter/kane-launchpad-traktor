@@ -1,0 +1,26 @@
+midimasher: build 20120402 (Windows)
+
+
+select a config > 
+midi: scan devices...
+midi.in.0: 6- Launchpad
+midi.in.1: MM to Traktor
+midi.in.2: Traktor to MM
+midi.out.0: Microsoft GS Wavetable Synth
+midi.out.1: 6- Launchpad
+midi.out.2: MM to Traktor
+midi.out.3: Traktor to MM
+hid: scan devices...
+loading: lib/startup.lua
+loading: config/kane-launchpad.lua
+lp: open midi.in.0: Launchpad
+lp: open midi.out.1: Launchpad
+loading: devices/launchpad.lua
+loading: lib/launchpad.lua
+traktor: open midi.in.2: Traktor to MM
+traktor: open midi.out.2: MM to Traktor
+loading: devices/traktor.lua
+loading: lib/traktor.lua
+running... <ctrl>-<c> to quit.
+      1 [unknown (0x1B1C)] mm 6252 exception::handle: Exception: STATUS_ACCESS_VIOLATION
+  17716 [unknown (0x1B1C)] mm 6252 open_stackdumpfile: Dumping stack trace to mm.exe.stackdump

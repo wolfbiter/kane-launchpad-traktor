@@ -1,0 +1,1899 @@
+midimasher: build 20120402 (Windows)
+
+
+select a config > 
+midi: scan devices...
+midi.in.0: 4- Launchpad
+midi.in.1: QUNEO
+midi.in.2: MM to Traktor
+midi.in.3: Traktor to MM
+midi.out.0: Microsoft GS Wavetable Synth
+midi.out.1: 4- Launchpad
+midi.out.2: QUNEO
+midi.out.3: MM to Traktor
+midi.out.4: Traktor to MM
+hid: scan devices...
+lua: register functions...
+lua: run embedded lua...
+loading: lib/startup.lua
+loading: config/kane-launchpad2.lua
+connect: in "Launchpad"
+warning: unable to find exact name [Launchpad]
+device name=[Launchpad] is index=0 port=0
+lp: open midi.in.0: Launchpad
+connect: out "Launchpad"
+warning: unable to find exact name [Launchpad]
+device name=[Launchpad] is index=5 port=1
+lp: open midi.out.1: Launchpad
+loading: devices/launchpad.lua
+loading: lib/launchpad.lua
+connect: in "QUNEO"
+device name=[QUNEO] is index=1 port=1
+qn: open midi.in.1: QUNEO
+connect: out "QUNEO"
+device name=[QUNEO] is index=6 port=2
+qn: open midi.out.2: QUNEO
+loading: devices/quneo.lua
+connect: in "Traktor to MM"
+device name=[Traktor to MM] is index=3 port=3
+traktor: open midi.in.3: Traktor to MM
+connect: out "MM to Traktor"
+device name=[MM to Traktor] is index=7 port=3
+traktor: open midi.out.3: MM to Traktor
+loading: devices/traktor.lua
+loading: lib/traktor.lua
+  [lp        ] 0,0 c=1 v=52 p=0
+  [lp        ] 90 00 34 [launchpad]
+  [lp        ] 0,0 c=1 v=7 p=0
+  [lp        ] 90 00 07 [launchpad]
+  [lp        ] 0,0 c=1 v=54 p=0
+  [lp        ] 90 00 36 [launchpad]
+  [lp        ] 0,0 c=1 v=4 p=0
+  [lp        ] 90 00 04 [launchpad]
+  [lp        ] 0,1 c=1 v=52 p=0
+  [lp        ] 90 01 34 [launchpad]
+  [lp        ] 0,1 c=1 v=7 p=0
+  [lp        ] 90 01 07 [launchpad]
+  [lp        ] 0,1 c=1 v=54 p=0
+  [lp        ] 90 01 36 [launchpad]
+  [lp        ] 0,1 c=1 v=4 p=0
+  [lp        ] 90 01 04 [launchpad]
+  [lp        ] 0,2 c=1 v=52 p=0
+  [lp        ] 90 02 34 [launchpad]
+  [lp        ] 0,2 c=1 v=7 p=0
+  [lp        ] 90 02 07 [launchpad]
+  [lp        ] 0,2 c=1 v=54 p=0
+  [lp        ] 90 02 36 [launchpad]
+  [lp        ] 0,2 c=1 v=4 p=0
+  [lp        ] 90 02 04 [launchpad]
+  [lp        ] 0,3 c=1 v=52 p=0
+  [lp        ] 90 03 34 [launchpad]
+  [lp        ] 0,3 c=1 v=7 p=0
+  [lp        ] 90 03 07 [launchpad]
+  [lp        ] 0,3 c=1 v=54 p=0
+  [lp        ] 90 03 36 [launchpad]
+  [lp        ] 0,3 c=1 v=4 p=0
+  [lp        ] 90 03 04 [launchpad]
+  [lp        ] 0,4 c=1 v=52 p=0
+  [lp        ] 90 04 34 [launchpad]
+  [lp        ] 0,4 c=1 v=7 p=0
+  [lp        ] 90 04 07 [launchpad]
+  [lp        ] 0,4 c=1 v=54 p=0
+  [lp        ] 90 04 36 [launchpad]
+  [lp        ] 0,4 c=1 v=4 p=0
+  [lp        ] 90 04 04 [launchpad]
+  [lp        ] 0,5 c=1 v=52 p=0
+  [lp        ] 90 05 34 [launchpad]
+  [lp        ] 0,5 c=1 v=7 p=0
+  [lp        ] 90 05 07 [launchpad]
+  [lp        ] 0,5 c=1 v=54 p=0
+  [lp        ] 90 05 36 [launchpad]
+  [lp        ] 0,5 c=1 v=4 p=0
+  [lp        ] 90 05 04 [launchpad]
+  [lp        ] 0,6 c=1 v=52 p=0
+  [lp        ] 90 06 34 [launchpad]
+  [lp        ] 0,6 c=1 v=7 p=0
+  [lp        ] 90 06 07 [launchpad]
+  [lp        ] 0,6 c=1 v=54 p=0
+  [lp        ] 90 06 36 [launchpad]
+  [lp        ] 0,6 c=1 v=4 p=0
+  [lp        ] 90 06 04 [launchpad]
+  [lp        ] 0,7 c=1 v=52 p=0
+  [lp        ] 90 07 34 [launchpad]
+  [lp        ] 0,7 c=1 v=7 p=0
+  [lp        ] 90 07 07 [launchpad]
+  [lp        ] 0,7 c=1 v=54 p=0
+  [lp        ] 90 07 36 [launchpad]
+  [lp        ] 0,7 c=1 v=4 p=0
+  [lp        ] 90 07 04 [launchpad]
+  [lp        ] 1,0 c=1 v=52 p=0
+  [lp        ] 90 10 34 [launchpad]
+  [lp        ] 1,0 c=1 v=7 p=0
+  [lp        ] 90 10 07 [launchpad]
+  [lp        ] 1,0 c=1 v=54 p=0
+  [lp        ] 90 10 36 [launchpad]
+  [lp        ] 1,0 c=1 v=4 p=0
+  [lp        ] 90 10 04 [launchpad]
+  [lp        ] 1,1 c=1 v=52 p=0
+  [lp        ] 90 11 34 [launchpad]
+  [lp        ] 1,1 c=1 v=7 p=0
+  [lp        ] 90 11 07 [launchpad]
+  [lp        ] 1,1 c=1 v=54 p=0
+  [lp        ] 90 11 36 [launchpad]
+  [lp        ] 1,1 c=1 v=4 p=0
+  [lp        ] 90 11 04 [launchpad]
+  [lp        ] 1,2 c=1 v=52 p=0
+  [lp        ] 90 12 34 [launchpad]
+  [lp        ] 1,2 c=1 v=7 p=0
+  [lp        ] 90 12 07 [launchpad]
+  [lp        ] 1,2 c=1 v=54 p=0
+  [lp        ] 90 12 36 [launchpad]
+  [lp        ] 1,2 c=1 v=4 p=0
+  [lp        ] 90 12 04 [launchpad]
+  [lp        ] 1,3 c=1 v=52 p=0
+  [lp        ] 90 13 34 [launchpad]
+  [lp        ] 1,3 c=1 v=7 p=0
+  [lp        ] 90 13 07 [launchpad]
+  [lp        ] 1,3 c=1 v=54 p=0
+  [lp        ] 90 13 36 [launchpad]
+  [lp        ] 1,3 c=1 v=4 p=0
+  [lp        ] 90 13 04 [launchpad]
+  [lp        ] 1,4 c=1 v=52 p=0
+  [lp        ] 90 14 34 [launchpad]
+  [lp        ] 1,4 c=1 v=7 p=0
+  [lp        ] 90 14 07 [launchpad]
+  [lp        ] 1,4 c=1 v=54 p=0
+  [lp        ] 90 14 36 [launchpad]
+  [lp        ] 1,4 c=1 v=4 p=0
+  [lp        ] 90 14 04 [launchpad]
+  [lp        ] 1,5 c=1 v=52 p=0
+  [lp        ] 90 15 34 [launchpad]
+  [lp        ] 1,5 c=1 v=7 p=0
+  [lp        ] 90 15 07 [launchpad]
+  [lp        ] 1,5 c=1 v=54 p=0
+  [lp        ] 90 15 36 [launchpad]
+  [lp        ] 1,5 c=1 v=4 p=0
+  [lp        ] 90 15 04 [launchpad]
+  [lp        ] 1,6 c=1 v=52 p=0
+  [lp        ] 90 16 34 [launchpad]
+  [lp        ] 1,6 c=1 v=7 p=0
+  [lp        ] 90 16 07 [launchpad]
+  [lp        ] 1,6 c=1 v=54 p=0
+  [lp        ] 90 16 36 [launchpad]
+  [lp        ] 1,6 c=1 v=4 p=0
+  [lp        ] 90 16 04 [launchpad]
+  [lp        ] 1,7 c=1 v=52 p=0
+  [lp        ] 90 17 34 [launchpad]
+  [lp        ] 1,7 c=1 v=7 p=0
+  [lp        ] 90 17 07 [launchpad]
+  [lp        ] 1,7 c=1 v=54 p=0
+  [lp        ] 90 17 36 [launchpad]
+  [lp        ] 1,7 c=1 v=4 p=0
+  [lp        ] 90 17 04 [launchpad]
+  [lp        ] 2,0 c=1 v=52 p=0
+  [lp        ] 90 20 34 [launchpad]
+  [lp        ] 2,0 c=1 v=7 p=0
+  [lp        ] 90 20 07 [launchpad]
+  [lp        ] 2,0 c=1 v=54 p=0
+  [lp        ] 90 20 36 [launchpad]
+  [lp        ] 2,0 c=1 v=4 p=0
+  [lp        ] 90 20 04 [launchpad]
+  [lp        ] 2,1 c=1 v=52 p=0
+  [lp        ] 90 21 34 [launchpad]
+  [lp        ] 2,1 c=1 v=7 p=0
+  [lp        ] 90 21 07 [launchpad]
+  [lp        ] 2,1 c=1 v=54 p=0
+  [lp        ] 90 21 36 [launchpad]
+  [lp        ] 2,1 c=1 v=4 p=0
+  [lp        ] 90 21 04 [launchpad]
+  [lp        ] 2,2 c=1 v=52 p=0
+  [lp        ] 90 22 34 [launchpad]
+  [lp        ] 2,2 c=1 v=7 p=0
+  [lp        ] 90 22 07 [launchpad]
+  [lp        ] 2,2 c=1 v=54 p=0
+  [lp        ] 90 22 36 [launchpad]
+  [lp        ] 2,2 c=1 v=4 p=0
+  [lp        ] 90 22 04 [launchpad]
+  [lp        ] 2,3 c=1 v=52 p=0
+  [lp        ] 90 23 34 [launchpad]
+  [lp        ] 2,3 c=1 v=7 p=0
+  [lp        ] 90 23 07 [launchpad]
+  [lp        ] 2,3 c=1 v=54 p=0
+  [lp        ] 90 23 36 [launchpad]
+  [lp        ] 2,3 c=1 v=4 p=0
+  [lp        ] 90 23 04 [launchpad]
+  [lp        ] 2,4 c=1 v=52 p=0
+  [lp        ] 90 24 34 [launchpad]
+  [lp        ] 2,4 c=1 v=7 p=0
+  [lp        ] 90 24 07 [launchpad]
+  [lp        ] 2,4 c=1 v=54 p=0
+  [lp        ] 90 24 36 [launchpad]
+  [lp        ] 2,4 c=1 v=4 p=0
+  [lp        ] 90 24 04 [launchpad]
+  [lp        ] 2,5 c=1 v=52 p=0
+  [lp        ] 90 25 34 [launchpad]
+  [lp        ] 2,5 c=1 v=7 p=0
+  [lp        ] 90 25 07 [launchpad]
+  [lp        ] 2,5 c=1 v=54 p=0
+  [lp        ] 90 25 36 [launchpad]
+  [lp        ] 2,5 c=1 v=4 p=0
+  [lp        ] 90 25 04 [launchpad]
+  [lp        ] 2,6 c=1 v=52 p=0
+  [lp        ] 90 26 34 [launchpad]
+  [lp        ] 2,6 c=1 v=7 p=0
+  [lp        ] 90 26 07 [launchpad]
+  [lp        ] 2,6 c=1 v=54 p=0
+  [lp        ] 90 26 36 [launchpad]
+  [lp        ] 2,6 c=1 v=4 p=0
+  [lp        ] 90 26 04 [launchpad]
+  [lp        ] 2,7 c=1 v=52 p=0
+  [lp        ] 90 27 34 [launchpad]
+  [lp        ] 2,7 c=1 v=7 p=0
+  [lp        ] 90 27 07 [launchpad]
+  [lp        ] 2,7 c=1 v=54 p=0
+  [lp        ] 90 27 36 [launchpad]
+  [lp        ] 2,7 c=1 v=4 p=0
+  [lp        ] 90 27 04 [launchpad]
+  [lp        ] 3,0 c=1 v=52 p=0
+  [lp        ] 90 30 34 [launchpad]
+  [lp        ] 3,0 c=1 v=7 p=0
+  [lp        ] 90 30 07 [launchpad]
+  [lp        ] 3,0 c=1 v=54 p=0
+  [lp        ] 90 30 36 [launchpad]
+  [lp        ] 3,0 c=1 v=4 p=0
+  [lp        ] 90 30 04 [launchpad]
+  [lp        ] 3,1 c=1 v=52 p=0
+  [lp        ] 90 31 34 [launchpad]
+  [lp        ] 3,1 c=1 v=7 p=0
+  [lp        ] 90 31 07 [launchpad]
+  [lp        ] 3,1 c=1 v=54 p=0
+  [lp        ] 90 31 36 [launchpad]
+  [lp        ] 3,1 c=1 v=4 p=0
+  [lp        ] 90 31 04 [launchpad]
+  [lp        ] 3,2 c=1 v=52 p=0
+  [lp        ] 90 32 34 [launchpad]
+  [lp        ] 3,2 c=1 v=7 p=0
+  [lp        ] 90 32 07 [launchpad]
+  [lp        ] 3,2 c=1 v=54 p=0
+  [lp        ] 90 32 36 [launchpad]
+  [lp        ] 3,2 c=1 v=4 p=0
+  [lp        ] 90 32 04 [launchpad]
+  [lp        ] 3,3 c=1 v=52 p=0
+  [lp        ] 90 33 34 [launchpad]
+  [lp        ] 3,3 c=1 v=7 p=0
+  [lp        ] 90 33 07 [launchpad]
+  [lp        ] 3,3 c=1 v=54 p=0
+  [lp        ] 90 33 36 [launchpad]
+  [lp        ] 3,3 c=1 v=4 p=0
+  [lp        ] 90 33 04 [launchpad]
+  [lp        ] 3,4 c=1 v=52 p=0
+  [lp        ] 90 34 34 [launchpad]
+  [lp        ] 3,4 c=1 v=7 p=0
+  [lp        ] 90 34 07 [launchpad]
+  [lp        ] 3,4 c=1 v=54 p=0
+  [lp        ] 90 34 36 [launchpad]
+  [lp        ] 3,4 c=1 v=4 p=0
+  [lp        ] 90 34 04 [launchpad]
+  [lp        ] 3,5 c=1 v=52 p=0
+  [lp        ] 90 35 34 [launchpad]
+  [lp        ] 3,5 c=1 v=7 p=0
+  [lp        ] 90 35 07 [launchpad]
+  [lp        ] 3,5 c=1 v=54 p=0
+  [lp        ] 90 35 36 [launchpad]
+  [lp        ] 3,5 c=1 v=4 p=0
+  [lp        ] 90 35 04 [launchpad]
+  [lp        ] 3,6 c=1 v=52 p=0
+  [lp        ] 90 36 34 [launchpad]
+  [lp        ] 3,6 c=1 v=7 p=0
+  [lp        ] 90 36 07 [launchpad]
+  [lp        ] 3,6 c=1 v=54 p=0
+  [lp        ] 90 36 36 [launchpad]
+  [lp        ] 3,6 c=1 v=4 p=0
+  [lp        ] 90 36 04 [launchpad]
+  [lp        ] 3,7 c=1 v=52 p=0
+  [lp        ] 90 37 34 [launchpad]
+  [lp        ] 3,7 c=1 v=7 p=0
+  [lp        ] 90 37 07 [launchpad]
+  [lp        ] 3,7 c=1 v=54 p=0
+  [lp        ] 90 37 36 [launchpad]
+  [lp        ] 3,7 c=1 v=4 p=0
+  [lp        ] 90 37 04 [launchpad]
+  [lp        ] 4,0 c=1 v=52 p=0
+  [lp        ] 90 40 34 [launchpad]
+  [lp        ] 4,0 c=1 v=7 p=0
+  [lp        ] 90 40 07 [launchpad]
+  [lp        ] 4,0 c=1 v=54 p=0
+  [lp        ] 90 40 36 [launchpad]
+  [lp        ] 4,0 c=1 v=4 p=0
+  [lp        ] 90 40 04 [launchpad]
+  [lp        ] 4,1 c=1 v=52 p=0
+  [lp        ] 90 41 34 [launchpad]
+  [lp        ] 4,1 c=1 v=7 p=0
+  [lp        ] 90 41 07 [launchpad]
+  [lp        ] 4,1 c=1 v=54 p=0
+  [lp        ] 90 41 36 [launchpad]
+  [lp        ] 4,1 c=1 v=4 p=0
+  [lp        ] 90 41 04 [launchpad]
+  [lp        ] 4,2 c=1 v=52 p=0
+  [lp        ] 90 42 34 [launchpad]
+  [lp        ] 4,2 c=1 v=7 p=0
+  [lp        ] 90 42 07 [launchpad]
+  [lp        ] 4,2 c=1 v=54 p=0
+  [lp        ] 90 42 36 [launchpad]
+  [lp        ] 4,2 c=1 v=4 p=0
+  [lp        ] 90 42 04 [launchpad]
+  [lp        ] 4,3 c=1 v=52 p=0
+  [lp        ] 90 43 34 [launchpad]
+  [lp        ] 4,3 c=1 v=7 p=0
+  [lp        ] 90 43 07 [launchpad]
+  [lp        ] 4,3 c=1 v=54 p=0
+  [lp        ] 90 43 36 [launchpad]
+  [lp        ] 4,3 c=1 v=4 p=0
+  [lp        ] 90 43 04 [launchpad]
+  [lp        ] 4,4 c=1 v=52 p=0
+  [lp        ] 90 44 34 [launchpad]
+  [lp        ] 4,4 c=1 v=7 p=0
+  [lp        ] 90 44 07 [launchpad]
+  [lp        ] 4,4 c=1 v=54 p=0
+  [lp        ] 90 44 36 [launchpad]
+  [lp        ] 4,4 c=1 v=4 p=0
+  [lp        ] 90 44 04 [launchpad]
+  [lp        ] 4,5 c=1 v=52 p=0
+  [lp        ] 90 45 34 [launchpad]
+  [lp        ] 4,5 c=1 v=7 p=0
+  [lp        ] 90 45 07 [launchpad]
+  [lp        ] 4,5 c=1 v=54 p=0
+  [lp        ] 90 45 36 [launchpad]
+  [lp        ] 4,5 c=1 v=4 p=0
+  [lp        ] 90 45 04 [launchpad]
+  [lp        ] 4,6 c=1 v=52 p=0
+  [lp        ] 90 46 34 [launchpad]
+  [lp        ] 4,6 c=1 v=7 p=0
+  [lp        ] 90 46 07 [launchpad]
+  [lp        ] 4,6 c=1 v=54 p=0
+  [lp        ] 90 46 36 [launchpad]
+  [lp        ] 4,6 c=1 v=4 p=0
+  [lp        ] 90 46 04 [launchpad]
+  [lp        ] 4,7 c=1 v=52 p=0
+  [lp        ] 90 47 34 [launchpad]
+  [lp        ] 4,7 c=1 v=7 p=0
+  [lp        ] 90 47 07 [launchpad]
+  [lp        ] 4,7 c=1 v=54 p=0
+  [lp        ] 90 47 36 [launchpad]
+  [lp        ] 4,7 c=1 v=4 p=0
+  [lp        ] 90 47 04 [launchpad]
+  [lp        ] 5,0 c=1 v=52 p=0
+  [lp        ] 90 50 34 [launchpad]
+  [lp        ] 5,0 c=1 v=7 p=0
+  [lp        ] 90 50 07 [launchpad]
+  [lp        ] 5,0 c=1 v=54 p=0
+  [lp        ] 90 50 36 [launchpad]
+  [lp        ] 5,0 c=1 v=4 p=0
+  [lp        ] 90 50 04 [launchpad]
+  [lp        ] 5,1 c=1 v=52 p=0
+  [lp        ] 90 51 34 [launchpad]
+  [lp        ] 5,1 c=1 v=7 p=0
+  [lp        ] 90 51 07 [launchpad]
+  [lp        ] 5,1 c=1 v=54 p=0
+  [lp        ] 90 51 36 [launchpad]
+  [lp        ] 5,1 c=1 v=4 p=0
+  [lp        ] 90 51 04 [launchpad]
+  [lp        ] 5,2 c=1 v=52 p=0
+  [lp        ] 90 52 34 [launchpad]
+  [lp        ] 5,2 c=1 v=7 p=0
+  [lp        ] 90 52 07 [launchpad]
+  [lp        ] 5,2 c=1 v=54 p=0
+  [lp        ] 90 52 36 [launchpad]
+  [lp        ] 5,2 c=1 v=4 p=0
+  [lp        ] 90 52 04 [launchpad]
+  [lp        ] 5,3 c=1 v=52 p=0
+  [lp        ] 90 53 34 [launchpad]
+  [lp        ] 5,3 c=1 v=7 p=0
+  [lp        ] 90 53 07 [launchpad]
+  [lp        ] 5,3 c=1 v=54 p=0
+  [lp        ] 90 53 36 [launchpad]
+  [lp        ] 5,3 c=1 v=4 p=0
+  [lp        ] 90 53 04 [launchpad]
+  [lp        ] 5,4 c=1 v=52 p=0
+  [lp        ] 90 54 34 [launchpad]
+  [lp        ] 5,4 c=1 v=7 p=0
+  [lp        ] 90 54 07 [launchpad]
+  [lp        ] 5,4 c=1 v=54 p=0
+  [lp        ] 90 54 36 [launchpad]
+  [lp        ] 5,4 c=1 v=4 p=0
+  [lp        ] 90 54 04 [launchpad]
+  [lp        ] 5,5 c=1 v=52 p=0
+  [lp        ] 90 55 34 [launchpad]
+  [lp        ] 5,5 c=1 v=7 p=0
+  [lp        ] 90 55 07 [launchpad]
+  [lp        ] 5,5 c=1 v=54 p=0
+  [lp        ] 90 55 36 [launchpad]
+  [lp        ] 5,5 c=1 v=4 p=0
+  [lp        ] 90 55 04 [launchpad]
+  [lp        ] 5,6 c=1 v=52 p=0
+  [lp        ] 90 56 34 [launchpad]
+  [lp        ] 5,6 c=1 v=7 p=0
+  [lp        ] 90 56 07 [launchpad]
+  [lp        ] 5,6 c=1 v=54 p=0
+  [lp        ] 90 56 36 [launchpad]
+  [lp        ] 5,6 c=1 v=4 p=0
+  [lp        ] 90 56 04 [launchpad]
+  [lp        ] 5,7 c=1 v=52 p=0
+  [lp        ] 90 57 34 [launchpad]
+  [lp        ] 5,7 c=1 v=7 p=0
+  [lp        ] 90 57 07 [launchpad]
+  [lp        ] 5,7 c=1 v=54 p=0
+  [lp        ] 90 57 36 [launchpad]
+  [lp        ] 5,7 c=1 v=4 p=0
+  [lp        ] 90 57 04 [launchpad]
+  [lp        ] 6,0 c=1 v=52 p=0
+  [lp        ] 90 60 34 [launchpad]
+  [lp        ] 6,0 c=1 v=7 p=0
+  [lp        ] 90 60 07 [launchpad]
+  [lp        ] 6,0 c=1 v=54 p=0
+  [lp        ] 90 60 36 [launchpad]
+  [lp        ] 6,0 c=1 v=4 p=0
+  [lp        ] 90 60 04 [launchpad]
+  [lp        ] 6,1 c=1 v=52 p=0
+  [lp        ] 90 61 34 [launchpad]
+  [lp        ] 6,1 c=1 v=7 p=0
+  [lp        ] 90 61 07 [launchpad]
+  [lp        ] 6,1 c=1 v=54 p=0
+  [lp        ] 90 61 36 [launchpad]
+  [lp        ] 6,1 c=1 v=4 p=0
+  [lp        ] 90 61 04 [launchpad]
+  [lp        ] 6,2 c=1 v=52 p=0
+  [lp        ] 90 62 34 [launchpad]
+  [lp        ] 6,2 c=1 v=7 p=0
+  [lp        ] 90 62 07 [launchpad]
+  [lp        ] 6,2 c=1 v=54 p=0
+  [lp        ] 90 62 36 [launchpad]
+  [lp        ] 6,2 c=1 v=4 p=0
+  [lp        ] 90 62 04 [launchpad]
+  [lp        ] 6,3 c=1 v=52 p=0
+  [lp        ] 90 63 34 [launchpad]
+  [lp        ] 6,3 c=1 v=7 p=0
+  [lp        ] 90 63 07 [launchpad]
+  [lp        ] 6,3 c=1 v=54 p=0
+  [lp        ] 90 63 36 [launchpad]
+  [lp        ] 6,3 c=1 v=4 p=0
+  [lp        ] 90 63 04 [launchpad]
+  [lp        ] 6,4 c=1 v=52 p=0
+  [lp        ] 90 64 34 [launchpad]
+  [lp        ] 6,4 c=1 v=7 p=0
+  [lp        ] 90 64 07 [launchpad]
+  [lp        ] 6,4 c=1 v=54 p=0
+  [lp        ] 90 64 36 [launchpad]
+  [lp        ] 6,4 c=1 v=4 p=0
+  [lp        ] 90 64 04 [launchpad]
+  [lp        ] 6,5 c=1 v=52 p=0
+  [lp        ] 90 65 34 [launchpad]
+  [lp        ] 6,5 c=1 v=7 p=0
+  [lp        ] 90 65 07 [launchpad]
+  [lp        ] 6,5 c=1 v=54 p=0
+  [lp        ] 90 65 36 [launchpad]
+  [lp        ] 6,5 c=1 v=4 p=0
+  [lp        ] 90 65 04 [launchpad]
+  [lp        ] 6,6 c=1 v=52 p=0
+  [lp        ] 90 66 34 [launchpad]
+  [lp        ] 6,6 c=1 v=7 p=0
+  [lp        ] 90 66 07 [launchpad]
+  [lp        ] 6,6 c=1 v=54 p=0
+  [lp        ] 90 66 36 [launchpad]
+  [lp        ] 6,6 c=1 v=4 p=0
+  [lp        ] 90 66 04 [launchpad]
+  [lp        ] 6,7 c=1 v=52 p=0
+  [lp        ] 90 67 34 [launchpad]
+  [lp        ] 6,7 c=1 v=7 p=0
+  [lp        ] 90 67 07 [launchpad]
+  [lp        ] 6,7 c=1 v=54 p=0
+  [lp        ] 90 67 36 [launchpad]
+  [lp        ] 6,7 c=1 v=4 p=0
+  [lp        ] 90 67 04 [launchpad]
+  [lp        ] 7,0 c=1 v=52 p=0
+  [lp        ] 90 70 34 [launchpad]
+  [lp        ] 7,0 c=1 v=7 p=0
+  [lp        ] 90 70 07 [launchpad]
+  [lp        ] 7,0 c=1 v=54 p=0
+  [lp        ] 90 70 36 [launchpad]
+  [lp        ] 7,0 c=1 v=4 p=0
+  [lp        ] 90 70 04 [launchpad]
+  [lp        ] 7,1 c=1 v=52 p=0
+  [lp        ] 90 71 34 [launchpad]
+  [lp        ] 7,1 c=1 v=7 p=0
+  [lp        ] 90 71 07 [launchpad]
+  [lp        ] 7,1 c=1 v=54 p=0
+  [lp        ] 90 71 36 [launchpad]
+  [lp        ] 7,1 c=1 v=4 p=0
+  [lp        ] 90 71 04 [launchpad]
+  [lp        ] 7,2 c=1 v=52 p=0
+  [lp        ] 90 72 34 [launchpad]
+  [lp        ] 7,2 c=1 v=7 p=0
+  [lp        ] 90 72 07 [launchpad]
+  [lp        ] 7,2 c=1 v=54 p=0
+  [lp        ] 90 72 36 [launchpad]
+  [lp        ] 7,2 c=1 v=4 p=0
+  [lp        ] 90 72 04 [launchpad]
+  [lp        ] 7,3 c=1 v=52 p=0
+  [lp        ] 90 73 34 [launchpad]
+  [lp        ] 7,3 c=1 v=7 p=0
+  [lp        ] 90 73 07 [launchpad]
+  [lp        ] 7,3 c=1 v=54 p=0
+  [lp        ] 90 73 36 [launchpad]
+  [lp        ] 7,3 c=1 v=4 p=0
+  [lp        ] 90 73 04 [launchpad]
+  [lp        ] 7,4 c=1 v=52 p=0
+  [lp        ] 90 74 34 [launchpad]
+  [lp        ] 7,4 c=1 v=7 p=0
+  [lp        ] 90 74 07 [launchpad]
+  [lp        ] 7,4 c=1 v=54 p=0
+  [lp        ] 90 74 36 [launchpad]
+  [lp        ] 7,4 c=1 v=4 p=0
+  [lp        ] 90 74 04 [launchpad]
+  [lp        ] 7,5 c=1 v=52 p=0
+  [lp        ] 90 75 34 [launchpad]
+  [lp        ] 7,5 c=1 v=7 p=0
+  [lp        ] 90 75 07 [launchpad]
+  [lp        ] 7,5 c=1 v=54 p=0
+  [lp        ] 90 75 36 [launchpad]
+  [lp        ] 7,5 c=1 v=4 p=0
+  [lp        ] 90 75 04 [launchpad]
+  [lp        ] 7,6 c=1 v=52 p=0
+  [lp        ] 90 76 34 [launchpad]
+  [lp        ] 7,6 c=1 v=7 p=0
+  [lp        ] 90 76 07 [launchpad]
+  [lp        ] 7,6 c=1 v=54 p=0
+  [lp        ] 90 76 36 [launchpad]
+  [lp        ] 7,6 c=1 v=4 p=0
+  [lp        ] 90 76 04 [launchpad]
+  [lp        ] 7,7 c=1 v=52 p=0
+  [lp        ] 90 77 34 [launchpad]
+  [lp        ] 7,7 c=1 v=7 p=0
+  [lp        ] 90 77 07 [launchpad]
+  [lp        ] 7,7 c=1 v=54 p=0
+  [lp        ] 90 77 36 [launchpad]
+  [lp        ] 7,7 c=1 v=4 p=0
+  [lp        ] 90 77 04 [launchpad]
+  [lp        ] up c=1 v=52 p=0
+  [lp        ] b0 68 34 [launchpad]
+  [lp        ] up c=1 v=7 p=0
+  [lp        ] b0 68 07 [launchpad]
+  [lp        ] up c=1 v=54 p=0
+  [lp        ] b0 68 36 [launchpad]
+  [lp        ] up c=1 v=4 p=0
+  [lp        ] b0 68 04 [launchpad]
+  [lp        ] down c=1 v=52 p=0
+  [lp        ] b0 69 34 [launchpad]
+  [lp        ] down c=1 v=7 p=0
+  [lp        ] b0 69 07 [launchpad]
+  [lp        ] down c=1 v=54 p=0
+  [lp        ] b0 69 36 [launchpad]
+  [lp        ] down c=1 v=4 p=0
+  [lp        ] b0 69 04 [launchpad]
+  [lp        ] left c=1 v=52 p=0
+  [lp        ] b0 6a 34 [launchpad]
+  [lp        ] left c=1 v=7 p=0
+  [lp        ] b0 6a 07 [launchpad]
+  [lp        ] left c=1 v=54 p=0
+  [lp        ] b0 6a 36 [launchpad]
+  [lp        ] left c=1 v=4 p=0
+  [lp        ] b0 6a 04 [launchpad]
+  [lp        ] right c=1 v=52 p=0
+  [lp        ] b0 6b 34 [launchpad]
+  [lp        ] right c=1 v=7 p=0
+  [lp        ] b0 6b 07 [launchpad]
+  [lp        ] right c=1 v=54 p=0
+  [lp        ] b0 6b 36 [launchpad]
+  [lp        ] right c=1 v=4 p=0
+  [lp        ] b0 6b 04 [launchpad]
+  [lp        ] session c=1 v=52 p=0
+  [lp        ] b0 6c 34 [launchpad]
+  [lp        ] session c=1 v=7 p=0
+  [lp        ] b0 6c 07 [launchpad]
+  [lp        ] session c=1 v=54 p=0
+  [lp        ] b0 6c 36 [launchpad]
+  [lp        ] session c=1 v=4 p=0
+  [lp        ] b0 6c 04 [launchpad]
+  [lp        ] user1 c=1 v=52 p=0
+  [lp        ] b0 6d 34 [launchpad]
+  [lp        ] user1 c=1 v=7 p=0
+  [lp        ] b0 6d 07 [launchpad]
+  [lp        ] user1 c=1 v=54 p=0
+  [lp        ] b0 6d 36 [launchpad]
+  [lp        ] user1 c=1 v=4 p=0
+  [lp        ] b0 6d 04 [launchpad]
+  [lp        ] user2 c=1 v=52 p=0
+  [lp        ] b0 6e 34 [launchpad]
+  [lp        ] user2 c=1 v=7 p=0
+  [lp        ] b0 6e 07 [launchpad]
+  [lp        ] user2 c=1 v=54 p=0
+  [lp        ] b0 6e 36 [launchpad]
+  [lp        ] user2 c=1 v=4 p=0
+  [lp        ] b0 6e 04 [launchpad]
+  [lp        ] mixer c=1 v=52 p=0
+  [lp        ] b0 6f 34 [launchpad]
+  [lp        ] mixer c=1 v=7 p=0
+  [lp        ] b0 6f 07 [launchpad]
+  [lp        ] mixer c=1 v=54 p=0
+  [lp        ] b0 6f 36 [launchpad]
+  [lp        ] mixer c=1 v=4 p=0
+  [lp        ] b0 6f 04 [launchpad]
+  [lp        ] vol c=1 v=52 p=0
+  [lp        ] 90 08 34 [launchpad]
+  [lp        ] vol c=1 v=7 p=0
+  [lp        ] 90 08 07 [launchpad]
+  [lp        ] vol c=1 v=54 p=0
+  [lp        ] 90 08 36 [launchpad]
+  [lp        ] vol c=1 v=4 p=0
+  [lp        ] 90 08 04 [launchpad]
+  [lp        ] pan c=1 v=52 p=0
+  [lp        ] 90 18 34 [launchpad]
+  [lp        ] pan c=1 v=7 p=0
+  [lp        ] 90 18 07 [launchpad]
+  [lp        ] pan c=1 v=54 p=0
+  [lp        ] 90 18 36 [launchpad]
+  [lp        ] pan c=1 v=4 p=0
+  [lp        ] 90 18 04 [launchpad]
+  [lp        ] snda c=1 v=52 p=0
+  [lp        ] 90 28 34 [launchpad]
+  [lp        ] snda c=1 v=7 p=0
+  [lp        ] 90 28 07 [launchpad]
+  [lp        ] snda c=1 v=54 p=0
+  [lp        ] 90 28 36 [launchpad]
+  [lp        ] snda c=1 v=4 p=0
+  [lp        ] 90 28 04 [launchpad]
+  [lp        ] sndb c=1 v=52 p=0
+  [lp        ] 90 38 34 [launchpad]
+  [lp        ] sndb c=1 v=7 p=0
+  [lp        ] 90 38 07 [launchpad]
+  [lp        ] sndb c=1 v=54 p=0
+  [lp        ] 90 38 36 [launchpad]
+  [lp        ] sndb c=1 v=4 p=0
+  [lp        ] 90 38 04 [launchpad]
+  [lp        ] stop c=1 v=52 p=0
+  [lp        ] 90 48 34 [launchpad]
+  [lp        ] stop c=1 v=7 p=0
+  [lp        ] 90 48 07 [launchpad]
+  [lp        ] stop c=1 v=54 p=0
+  [lp        ] 90 48 36 [launchpad]
+  [lp        ] stop c=1 v=4 p=0
+  [lp        ] 90 48 04 [launchpad]
+  [lp        ] trkon c=1 v=52 p=0
+  [lp        ] 90 58 34 [launchpad]
+  [lp        ] trkon c=1 v=7 p=0
+  [lp        ] 90 58 07 [launchpad]
+  [lp        ] trkon c=1 v=54 p=0
+  [lp        ] 90 58 36 [launchpad]
+  [lp        ] trkon c=1 v=4 p=0
+  [lp        ] 90 58 04 [launchpad]
+  [lp        ] solo c=1 v=52 p=0
+  [lp        ] 90 68 34 [launchpad]
+  [lp        ] solo c=1 v=7 p=0
+  [lp        ] 90 68 07 [launchpad]
+  [lp        ] solo c=1 v=54 p=0
+  [lp        ] 90 68 36 [launchpad]
+  [lp        ] solo c=1 v=4 p=0
+  [lp        ] 90 68 04 [launchpad]
+  [lp        ] arm c=1 v=52 p=0
+  [lp        ] 90 78 34 [launchpad]
+  [lp        ] arm c=1 v=7 p=0
+  [lp        ] 90 78 07 [launchpad]
+  [lp        ] arm c=1 v=54 p=0
+  [lp        ] 90 78 36 [launchpad]
+  [lp        ] arm c=1 v=4 p=0
+  [lp        ] 90 78 04 [launchpad]
+  [lp        ] b0 00 00 [launchpad]
+  [lp        ] b0 00 28 [launchpad]
+  [traktor   ] master_tempo_clock_send c=5 v=127 p=0
+  [traktor   ] b4 56 7f [traktor]
+  [lp        ] solo c=1 v=5 p=0
+  [lp        ] 90 68 05 [launchpad]
+  [lp        ] arm c=1 v=5 p=0
+  [lp        ] 90 78 05 [launchpad]
+  [lp        ] snda c=1 v=20 p=0
+  [lp        ] 90 28 14 [launchpad]
+  [lp        ] sndb c=1 v=20 p=0
+  [lp        ] 90 38 14 [launchpad]
+  [lp        ] stop c=1 v=37 p=0
+  [lp        ] 90 48 25 [launchpad]
+  [lp        ] trkon c=1 v=37 p=0
+  [lp        ] 90 58 25 [launchpad]
+  [lp        ] vol c=1 v=22 p=0
+  [lp        ] 90 08 16 [launchpad]
+  [lp        ] pan c=1 v=22 p=0
+  [lp        ] 90 18 16 [launchpad]
+  [lp        ] session c=1 v=20 p=0
+  [lp        ] b0 6c 14 [launchpad]
+  [lp        ] user1 c=1 v=50 p=0
+  [lp        ] b0 6d 32 [launchpad]
+  [lp        ] user2 c=1 v=21 p=0
+  [lp        ] b0 6e 15 [launchpad]
+  [lp        ] up c=1 v=37 p=0
+  [lp        ] b0 68 25 [launchpad]
+  [lp        ] down c=1 v=37 p=0
+  [lp        ] b0 69 25 [launchpad]
+  [lp        ] right c=1 v=37 p=0
+  [lp        ] b0 6b 25 [launchpad]
+  [lp        ] left c=1 v=37 p=0
+  [lp        ] b0 6a 25 [launchpad]
+lp.0: attached lp_left
+  [lp        ] 7,0 c=1 v=4 p=0
+  [lp        ] 90 70 04 [launchpad]
+  [lp] has no control [8,8]
+  [lp        ] 8,8 c=0 v=21 p=0
+  [lp        ] 8f 00 15 [launchpad]
+- [_varchange] .. .. .. [] type=event name=lp_left___page value=1
+  [lp_left   ] 0,0 c=1 v=5 p=1
+  [lp_left   ] 90 00 05 [launchpad]
+  [lp        ] 90 00 05 [launchpad]
+  [lp_left   ] 0,1 c=1 v=5 p=1
+  [lp_left   ] 90 01 05 [launchpad]
+  [lp        ] 90 01 05 [launchpad]
+  [lp_left   ] 0,2 c=1 v=5 p=1
+  [lp_left   ] 90 02 05 [launchpad]
+  [lp        ] 90 02 05 [launchpad]
+  [lp_left   ] 0,3 c=1 v=5 p=1
+  [lp_left   ] 90 03 05 [launchpad]
+  [lp        ] 90 03 05 [launchpad]
+  [lp_left   ] 1,0 c=1 v=5 p=1
+  [lp_left   ] 90 10 05 [launchpad]
+  [lp        ] 90 10 05 [launchpad]
+  [lp_left   ] 1,1 c=1 v=5 p=1
+  [lp_left   ] 90 11 05 [launchpad]
+  [lp        ] 90 11 05 [launchpad]
+  [lp_left   ] 1,2 c=1 v=5 p=1
+  [lp_left   ] 90 12 05 [launchpad]
+  [lp        ] 90 12 05 [launchpad]
+  [lp_left   ] 1,3 c=1 v=5 p=1
+  [lp_left   ] 90 13 05 [launchpad]
+  [lp        ] 90 13 05 [launchpad]
+  [lp_left   ] 2,2 c=1 v=4 p=1
+  [lp_left   ] 90 22 04 [launchpad]
+  [lp        ] 90 22 04 [launchpad]
+  [lp_left   ] 2,3 c=1 v=4 p=1
+  [lp_left   ] 90 23 04 [launchpad]
+  [lp        ] 90 23 04 [launchpad]
+  [lp_left   ] 3,2 c=1 v=4 p=1
+  [lp_left   ] 90 32 04 [launchpad]
+  [lp        ] 90 32 04 [launchpad]
+  [lp_left   ] 3,3 c=1 v=4 p=1
+  [lp_left   ] 90 33 04 [launchpad]
+  [lp        ] 90 33 04 [launchpad]
+  [lp_left   ] 3,1 c=1 v=4 p=1
+  [lp_left   ] 90 31 04 [launchpad]
+  [lp        ] 90 31 04 [launchpad]
+  [lp_left   ] 2,0 c=1 v=37 p=1
+  [lp_left   ] 90 20 25 [launchpad]
+  [lp        ] 90 20 25 [launchpad]
+  [lp_left   ] 3,0 c=1 v=20 p=1
+  [lp_left   ] 90 30 14 [launchpad]
+  [lp        ] 90 30 14 [launchpad]
+  [lp_left   ] 7,3 c=1 v=20 p=1
+  [lp_left   ] 90 73 14 [launchpad]
+  [lp        ] 90 73 14 [launchpad]
+  [lp_left   ] 7,2 c=1 v=5 p=1
+  [lp_left   ] 90 72 05 [launchpad]
+  [lp        ] 90 72 05 [launchpad]
+  [lp_left   ] 7,1 c=1 v=4 p=1
+  [lp_left   ] 90 71 04 [launchpad]
+  [lp        ] 90 71 04 [launchpad]
+  [lp_left   ] 4,3 c=1 v=4 p=1
+  [lp_left   ] 90 43 04 [launchpad]
+  [lp        ] 90 43 04 [launchpad]
+  [lp_left   ] 5,3 c=1 v=4 p=1
+  [lp_left   ] 90 53 04 [launchpad]
+  [lp        ] 90 53 04 [launchpad]
+  [lp_left   ] 6,3 c=1 v=4 p=1
+  [lp_left   ] 90 63 04 [launchpad]
+  [lp        ] 90 63 04 [launchpad]
+  [lp_left   ] 4,2 c=1 v=4 p=1
+  [lp_left   ] 90 42 04 [launchpad]
+  [lp        ] 90 42 04 [launchpad]
+  [lp_left   ] 5,2 c=1 v=4 p=1
+  [lp_left   ] 90 52 04 [launchpad]
+  [lp        ] 90 52 04 [launchpad]
+  [lp_left   ] 6,2 c=1 v=4 p=1
+  [lp_left   ] 90 62 04 [launchpad]
+  [lp        ] 90 62 04 [launchpad]
+  [lp        ] 6,0 c=1 v=5 p=0
+  [lp        ] 90 60 05 [launchpad]
+- [_varchange] .. .. .. [] type=event name=jumping_lp_left value=1
+  [lp        ] 6,0 c=1 v=20 p=0
+  [lp        ] 90 60 14 [launchpad]
+  [lp        ] 6,1 c=1 v=4 p=0
+  [lp        ] 90 61 04 [launchpad]
+  [lp_left   ] 4,0 c=1 v=20 p=1
+  [lp_left   ] 90 40 14 [launchpad]
+  [lp        ] 90 40 14 [launchpad]
+  [lp_left   ] 4,1 c=1 v=20 p=1
+  [lp_left   ] 90 41 14 [launchpad]
+  [lp        ] 90 41 14 [launchpad]
+  [lp_left   ] 5,0 c=1 v=20 p=1
+  [lp_left   ] 90 50 14 [launchpad]
+  [lp        ] 90 50 14 [launchpad]
+  [lp_left   ] 5,1 c=1 v=20 p=1
+  [lp_left   ] 90 51 14 [launchpad]
+  [lp        ] 90 51 14 [launchpad]
+lp.0: attached lp_right
+  [lp        ] 7,4 c=1 v=4 p=0
+  [lp        ] 90 74 04 [launchpad]
+  [lp] has no control [8,8]
+  [lp        ] 8,8 c=0 v=21 p=0
+  [lp        ] 8f 00 15 [launchpad]
+- [_varchange] .. .. .. [] type=event name=lp_right___page value=1
+  [lp_right  ] 0,4 c=1 v=5 p=1
+  [lp_right  ] 90 04 05 [launchpad]
+  [lp        ] 90 04 05 [launchpad]
+  [lp_right  ] 0,5 c=1 v=5 p=1
+  [lp_right  ] 90 05 05 [launchpad]
+  [lp        ] 90 05 05 [launchpad]
+  [lp_right  ] 0,6 c=1 v=5 p=1
+  [lp_right  ] 90 06 05 [launchpad]
+  [lp        ] 90 06 05 [launchpad]
+  [lp_right  ] 0,7 c=1 v=5 p=1
+  [lp_right  ] 90 07 05 [launchpad]
+  [lp        ] 90 07 05 [launchpad]
+  [lp_right  ] 1,4 c=1 v=5 p=1
+  [lp_right  ] 90 14 05 [launchpad]
+  [lp        ] 90 14 05 [launchpad]
+  [lp_right  ] 1,5 c=1 v=5 p=1
+  [lp_right  ] 90 15 05 [launchpad]
+  [lp        ] 90 15 05 [launchpad]
+  [lp_right  ] 1,6 c=1 v=5 p=1
+  [lp_right  ] 90 16 05 [launchpad]
+  [lp        ] 90 16 05 [launchpad]
+  [lp_right  ] 1,7 c=1 v=5 p=1
+  [lp_right  ] 90 17 05 [launchpad]
+  [lp        ] 90 17 05 [launchpad]
+  [lp_right  ] 2,6 c=1 v=4 p=1
+  [lp_right  ] 90 26 04 [launchpad]
+  [lp        ] 90 26 04 [launchpad]
+  [lp_right  ] 2,7 c=1 v=4 p=1
+  [lp_right  ] 90 27 04 [launchpad]
+  [lp        ] 90 27 04 [launchpad]
+  [lp_right  ] 3,6 c=1 v=4 p=1
+  [lp_right  ] 90 36 04 [launchpad]
+  [lp        ] 90 36 04 [launchpad]
+  [lp_right  ] 3,7 c=1 v=4 p=1
+  [lp_right  ] 90 37 04 [launchpad]
+  [lp        ] 90 37 04 [launchpad]
+  [lp_right  ] 3,5 c=1 v=4 p=1
+  [lp_right  ] 90 35 04 [launchpad]
+  [lp        ] 90 35 04 [launchpad]
+  [lp_right  ] 2,4 c=1 v=37 p=1
+  [lp_right  ] 90 24 25 [launchpad]
+  [lp        ] 90 24 25 [launchpad]
+  [lp_right  ] 3,4 c=1 v=20 p=1
+  [lp_right  ] 90 34 14 [launchpad]
+  [lp        ] 90 34 14 [launchpad]
+  [lp_right  ] 7,7 c=1 v=20 p=1
+  [lp_right  ] 90 77 14 [launchpad]
+  [lp        ] 90 77 14 [launchpad]
+  [lp_right  ] 7,6 c=1 v=5 p=1
+  [lp_right  ] 90 76 05 [launchpad]
+  [lp        ] 90 76 05 [launchpad]
+  [lp_right  ] 7,5 c=1 v=4 p=1
+  [lp_right  ] 90 75 04 [launchpad]
+  [lp        ] 90 75 04 [launchpad]
+  [lp_right  ] 4,7 c=1 v=4 p=1
+  [lp_right  ] 90 47 04 [launchpad]
+  [lp        ] 90 47 04 [launchpad]
+  [lp_right  ] 5,7 c=1 v=4 p=1
+  [lp_right  ] 90 57 04 [launchpad]
+  [lp        ] 90 57 04 [launchpad]
+  [lp_right  ] 6,7 c=1 v=4 p=1
+  [lp_right  ] 90 67 04 [launchpad]
+  [lp        ] 90 67 04 [launchpad]
+  [lp_right  ] 4,6 c=1 v=4 p=1
+  [lp_right  ] 90 46 04 [launchpad]
+  [lp        ] 90 46 04 [launchpad]
+  [lp_right  ] 5,6 c=1 v=4 p=1
+  [lp_right  ] 90 56 04 [launchpad]
+  [lp        ] 90 56 04 [launchpad]
+  [lp_right  ] 6,6 c=1 v=4 p=1
+  [lp_right  ] 90 66 04 [launchpad]
+  [lp        ] 90 66 04 [launchpad]
+  [lp        ] 6,4 c=1 v=5 p=0
+  [lp        ] 90 64 05 [launchpad]
+- [_varchange] .. .. .. [] type=event name=jumping_lp_right value=1
+  [lp        ] 6,4 c=1 v=20 p=0
+  [lp        ] 90 64 14 [launchpad]
+  [lp        ] 6,5 c=1 v=4 p=0
+  [lp        ] 90 65 04 [launchpad]
+  [lp_right  ] 4,4 c=1 v=20 p=1
+  [lp_right  ] 90 44 14 [launchpad]
+  [lp        ] 90 44 14 [launchpad]
+  [lp_right  ] 4,5 c=1 v=20 p=1
+  [lp_right  ] 90 45 14 [launchpad]
+  [lp        ] 90 45 14 [launchpad]
+  [lp_right  ] 5,4 c=1 v=20 p=1
+  [lp_right  ] 90 54 14 [launchpad]
+  [lp        ] 90 54 14 [launchpad]
+  [lp_right  ] 5,5 c=1 v=20 p=1
+  [lp_right  ] 90 55 14 [launchpad]
+  [lp        ] 90 55 14 [launchpad]
+  [qn        ] solo c=1 v=5 p=0
+  [qn        ] 90 68 05 [quneo]
+  [qn        ] arm c=1 v=5 p=0
+  [qn        ] 90 78 05 [quneo]
+  [qn        ] snda c=1 v=20 p=0
+  [qn        ] 90 28 14 [quneo]
+  [qn        ] sndb c=1 v=20 p=0
+  [qn        ] 90 38 14 [quneo]
+  [qn        ] stop c=1 v=37 p=0
+  [qn        ] 90 48 25 [quneo]
+  [qn        ] trkon c=1 v=37 p=0
+  [qn        ] 90 58 25 [quneo]
+  [qn        ] vol c=1 v=22 p=0
+  [qn        ] 90 08 16 [quneo]
+  [qn        ] pan c=1 v=22 p=0
+  [qn        ] 90 18 16 [quneo]
+  [qn        ] session c=1 v=20 p=0
+  [qn        ] b0 6c 14 [quneo]
+  [qn        ] user1 c=1 v=50 p=0
+  [qn        ] b0 6d 32 [quneo]
+  [qn        ] user2 c=1 v=21 p=0
+  [qn        ] b0 6e 15 [quneo]
+  [qn        ] up c=1 v=37 p=0
+  [qn        ] b0 68 25 [quneo]
+  [qn        ] down c=1 v=37 p=0
+  [qn        ] b0 69 25 [quneo]
+  [qn        ] right c=1 v=37 p=0
+  [qn        ] b0 6b 25 [quneo]
+  [qn        ] left c=1 v=37 p=0
+  [qn        ] b0 6a 25 [quneo]
+qn.0: attached qn_left
+  [qn        ] 7,0 c=1 v=4 p=0
+  [qn        ] 90 70 04 [quneo]
+  [qn] has no control [8,8]
+  [qn        ] 8,8 c=0 v=21 p=0
+  [qn        ] 8f 00 15 [quneo]
+- [_varchange] .. .. .. [] type=event name=qn_left___page value=1
+  [qn_left   ] 0,0 c=1 v=5 p=1
+  [qn_left   ] 90 00 05 [quneo]
+  [qn        ] 90 00 05 [quneo]
+  [qn_left   ] 0,1 c=1 v=5 p=1
+  [qn_left   ] 90 01 05 [quneo]
+  [qn        ] 90 01 05 [quneo]
+  [qn_left   ] 0,2 c=1 v=5 p=1
+  [qn_left   ] 90 02 05 [quneo]
+  [qn        ] 90 02 05 [quneo]
+  [qn_left   ] 0,3 c=1 v=5 p=1
+  [qn_left   ] 90 03 05 [quneo]
+  [qn        ] 90 03 05 [quneo]
+  [qn_left   ] 1,0 c=1 v=5 p=1
+  [qn_left   ] 90 10 05 [quneo]
+  [qn        ] 90 10 05 [quneo]
+  [qn_left   ] 1,1 c=1 v=5 p=1
+  [qn_left   ] 90 11 05 [quneo]
+  [qn        ] 90 11 05 [quneo]
+  [qn_left   ] 1,2 c=1 v=5 p=1
+  [qn_left   ] 90 12 05 [quneo]
+  [qn        ] 90 12 05 [quneo]
+  [qn_left   ] 1,3 c=1 v=5 p=1
+  [qn_left   ] 90 13 05 [quneo]
+  [qn        ] 90 13 05 [quneo]
+  [qn_left   ] 2,2 c=1 v=4 p=1
+  [qn_left   ] 90 22 04 [quneo]
+  [qn        ] 90 22 04 [quneo]
+  [qn_left   ] 2,3 c=1 v=4 p=1
+  [qn_left   ] 90 23 04 [quneo]
+  [qn        ] 90 23 04 [quneo]
+  [qn_left   ] 3,2 c=1 v=4 p=1
+  [qn_left   ] 90 32 04 [quneo]
+  [qn        ] 90 32 04 [quneo]
+  [qn_left   ] 3,3 c=1 v=4 p=1
+  [qn_left   ] 90 33 04 [quneo]
+  [qn        ] 90 33 04 [quneo]
+  [qn_left   ] 3,1 c=1 v=4 p=1
+  [qn_left   ] 90 31 04 [quneo]
+  [qn        ] 90 31 04 [quneo]
+  [qn_left   ] 2,0 c=1 v=37 p=1
+  [qn_left   ] 90 20 25 [quneo]
+  [qn        ] 90 20 25 [quneo]
+  [qn_left   ] 3,0 c=1 v=20 p=1
+  [qn_left   ] 90 30 14 [quneo]
+  [qn        ] 90 30 14 [quneo]
+  [qn_left   ] 7,3 c=1 v=20 p=1
+  [qn_left   ] 90 73 14 [quneo]
+  [qn        ] 90 73 14 [quneo]
+  [qn_left   ] 7,2 c=1 v=5 p=1
+  [qn_left   ] 90 72 05 [quneo]
+  [qn        ] 90 72 05 [quneo]
+  [qn_left   ] 7,1 c=1 v=4 p=1
+  [qn_left   ] 90 71 04 [quneo]
+  [qn        ] 90 71 04 [quneo]
+  [qn_left   ] 4,3 c=1 v=4 p=1
+  [qn_left   ] 90 43 04 [quneo]
+  [qn        ] 90 43 04 [quneo]
+  [qn_left   ] 5,3 c=1 v=4 p=1
+  [qn_left   ] 90 53 04 [quneo]
+  [qn        ] 90 53 04 [quneo]
+  [qn_left   ] 6,3 c=1 v=4 p=1
+  [qn_left   ] 90 63 04 [quneo]
+  [qn        ] 90 63 04 [quneo]
+  [qn_left   ] 4,2 c=1 v=4 p=1
+  [qn_left   ] 90 42 04 [quneo]
+  [qn        ] 90 42 04 [quneo]
+  [qn_left   ] 5,2 c=1 v=4 p=1
+  [qn_left   ] 90 52 04 [quneo]
+  [qn        ] 90 52 04 [quneo]
+  [qn_left   ] 6,2 c=1 v=4 p=1
+  [qn_left   ] 90 62 04 [quneo]
+  [qn        ] 90 62 04 [quneo]
+  [qn        ] 6,0 c=1 v=5 p=0
+  [qn        ] 90 60 05 [quneo]
+- [_varchange] .. .. .. [] type=event name=jumping_qn_left value=1
+  [qn        ] 6,0 c=1 v=20 p=0
+  [qn        ] 90 60 14 [quneo]
+  [qn        ] 6,1 c=1 v=4 p=0
+  [qn        ] 90 61 04 [quneo]
+  [qn_left   ] 4,0 c=1 v=20 p=1
+  [qn_left   ] 90 40 14 [quneo]
+  [qn        ] 90 40 14 [quneo]
+  [qn_left   ] 4,1 c=1 v=20 p=1
+  [qn_left   ] 90 41 14 [quneo]
+  [qn        ] 90 41 14 [quneo]
+  [qn_left   ] 5,0 c=1 v=20 p=1
+  [qn_left   ] 90 50 14 [quneo]
+  [qn        ] 90 50 14 [quneo]
+  [qn_left   ] 5,1 c=1 v=20 p=1
+  [qn_left   ] 90 51 14 [quneo]
+  [qn        ] 90 51 14 [quneo]
+qn.0: attached qn_right
+  [qn        ] 7,4 c=1 v=4 p=0
+  [qn        ] 90 74 04 [quneo]
+  [qn] has no control [8,8]
+  [qn        ] 8,8 c=0 v=21 p=0
+  [qn        ] 8f 00 15 [quneo]
+- [_varchange] .. .. .. [] type=event name=qn_right___page value=1
+  [qn_right  ] 0,4 c=1 v=5 p=1
+  [qn_right  ] 90 04 05 [quneo]
+  [qn        ] 90 04 05 [quneo]
+  [qn_right  ] 0,5 c=1 v=5 p=1
+  [qn_right  ] 90 05 05 [quneo]
+  [qn        ] 90 05 05 [quneo]
+  [qn_right  ] 0,6 c=1 v=5 p=1
+  [qn_right  ] 90 06 05 [quneo]
+  [qn        ] 90 06 05 [quneo]
+  [qn_right  ] 0,7 c=1 v=5 p=1
+  [qn_right  ] 90 07 05 [quneo]
+  [qn        ] 90 07 05 [quneo]
+  [qn_right  ] 1,4 c=1 v=5 p=1
+  [qn_right  ] 90 14 05 [quneo]
+  [qn        ] 90 14 05 [quneo]
+  [qn_right  ] 1,5 c=1 v=5 p=1
+  [qn_right  ] 90 15 05 [quneo]
+  [qn        ] 90 15 05 [quneo]
+  [qn_right  ] 1,6 c=1 v=5 p=1
+  [qn_right  ] 90 16 05 [quneo]
+  [qn        ] 90 16 05 [quneo]
+  [qn_right  ] 1,7 c=1 v=5 p=1
+  [qn_right  ] 90 17 05 [quneo]
+  [qn        ] 90 17 05 [quneo]
+  [qn_right  ] 2,6 c=1 v=4 p=1
+  [qn_right  ] 90 26 04 [quneo]
+  [qn        ] 90 26 04 [quneo]
+  [qn_right  ] 2,7 c=1 v=4 p=1
+  [qn_right  ] 90 27 04 [quneo]
+  [qn        ] 90 27 04 [quneo]
+  [qn_right  ] 3,6 c=1 v=4 p=1
+  [qn_right  ] 90 36 04 [quneo]
+  [qn        ] 90 36 04 [quneo]
+  [qn_right  ] 3,7 c=1 v=4 p=1
+  [qn_right  ] 90 37 04 [quneo]
+  [qn        ] 90 37 04 [quneo]
+  [qn_right  ] 3,5 c=1 v=4 p=1
+  [qn_right  ] 90 35 04 [quneo]
+  [qn        ] 90 35 04 [quneo]
+  [qn_right  ] 2,4 c=1 v=37 p=1
+  [qn_right  ] 90 24 25 [quneo]
+  [qn        ] 90 24 25 [quneo]
+  [qn_right  ] 3,4 c=1 v=20 p=1
+  [qn_right  ] 90 34 14 [quneo]
+  [qn        ] 90 34 14 [quneo]
+  [qn_right  ] 7,7 c=1 v=20 p=1
+  [qn_right  ] 90 77 14 [quneo]
+  [qn        ] 90 77 14 [quneo]
+  [qn_right  ] 7,6 c=1 v=5 p=1
+  [qn_right  ] 90 76 05 [quneo]
+  [qn        ] 90 76 05 [quneo]
+  [qn_right  ] 7,5 c=1 v=4 p=1
+  [qn_right  ] 90 75 04 [quneo]
+  [qn        ] 90 75 04 [quneo]
+  [qn_right  ] 4,7 c=1 v=4 p=1
+  [qn_right  ] 90 47 04 [quneo]
+  [qn        ] 90 47 04 [quneo]
+  [qn_right  ] 5,7 c=1 v=4 p=1
+  [qn_right  ] 90 57 04 [quneo]
+  [qn        ] 90 57 04 [quneo]
+  [qn_right  ] 6,7 c=1 v=4 p=1
+  [qn_right  ] 90 67 04 [quneo]
+  [qn        ] 90 67 04 [quneo]
+  [qn_right  ] 4,6 c=1 v=4 p=1
+  [qn_right  ] 90 46 04 [quneo]
+  [qn        ] 90 46 04 [quneo]
+  [qn_right  ] 5,6 c=1 v=4 p=1
+  [qn_right  ] 90 56 04 [quneo]
+  [qn        ] 90 56 04 [quneo]
+  [qn_right  ] 6,6 c=1 v=4 p=1
+  [qn_right  ] 90 66 04 [quneo]
+  [qn        ] 90 66 04 [quneo]
+  [qn        ] 6,4 c=1 v=5 p=0
+  [qn        ] 90 64 05 [quneo]
+- [_varchange] .. .. .. [] type=event name=jumping_qn_right value=1
+  [qn        ] 6,4 c=1 v=20 p=0
+  [qn        ] 90 64 14 [quneo]
+  [qn        ] 6,5 c=1 v=4 p=0
+  [qn        ] 90 65 04 [quneo]
+  [qn_right  ] 4,4 c=1 v=20 p=1
+  [qn_right  ] 90 44 14 [quneo]
+  [qn        ] 90 44 14 [quneo]
+  [qn_right  ] 4,5 c=1 v=20 p=1
+  [qn_right  ] 90 45 14 [quneo]
+  [qn        ] 90 45 14 [quneo]
+  [qn_right  ] 5,4 c=1 v=20 p=1
+  [qn_right  ] 90 54 14 [quneo]
+  [qn        ] 90 54 14 [quneo]
+  [qn_right  ] 5,5 c=1 v=20 p=1
+  [qn_right  ] 90 55 14 [quneo]
+  [qn        ] 90 55 14 [quneo]
+running... <ctrl>-<c> to quit.
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+* [qn        ] 90 00 7f [quneo] type=note-on name=0,0 value=127
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+  [lp        ] b0 00 21 [launchpad]
+* [qn        ] 80 00 00 [quneo] type=note-off name=0,0 value=0
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=0
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=33.160ms, bpm=113.09
+  [lp        ] b0 00 21 [launchpad]
+* [lp        ] 90 00 7f [launchpad] type=note-on name=0,0 value=127
+- [lp_left   ] .. .. .. [launchpad] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+  [lp        ] b0 00 20 [launchpad]
+* [lp        ] 90 00 00 [launchpad] type=note-on name=0,0 value=0
+- [lp_left   ] .. .. .. [launchpad] type=event name=0,0 value=0
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+* [qn        ] 90 00 7f [quneo] type=note-on name=0,0 value=127
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+  [lp        ] b0 00 20 [launchpad]
+* [qn        ] 80 00 00 [quneo] type=note-off name=0,0 value=0
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=0
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.404ms, bpm=109.00
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+* [traktor   ] b4 54 00 [traktor] type=cc name=track_end_warning_a value=0
+  [lp        ] b0 00 21 [launchpad]
+* [traktor   ] b1 34 01 [traktor] type=cc name=hotcue1_state_a value=1
+  [lp_left   ] 0,0 c=1 v=52 p=1
+  [lp_left   ] 90 00 34 [launchpad]
+  [lp        ] 90 00 34 [launchpad]
+  [qn_left   ] 0,0 c=1 v=52 p=1
+  [qn_left   ] 90 00 34 [quneo]
+  [qn        ] 90 00 34 [quneo]
+* [traktor   ] b1 35 01 [traktor] type=cc name=hotcue2_state_a value=1
+  [lp_left   ] 0,1 c=1 v=52 p=1
+  [lp_left   ] 90 01 34 [launchpad]
+  [lp        ] 90 01 34 [launchpad]
+  [qn_left   ] 0,1 c=1 v=52 p=1
+  [qn_left   ] 90 01 34 [quneo]
+  [qn        ] 90 01 34 [quneo]
+* [traktor   ] b1 36 01 [traktor] type=cc name=hotcue3_state_a value=1
+  [lp_left   ] 0,2 c=1 v=52 p=1
+  [lp_left   ] 90 02 34 [launchpad]
+  [lp        ] 90 02 34 [launchpad]
+  [qn_left   ] 0,2 c=1 v=52 p=1
+  [qn_left   ] 90 02 34 [quneo]
+  [qn        ] 90 02 34 [quneo]
+* [traktor   ] b1 37 01 [traktor] type=cc name=hotcue4_state_a value=1
+  [lp_left   ] 0,3 c=1 v=52 p=1
+  [lp_left   ] 90 03 34 [launchpad]
+  [lp        ] 90 03 34 [launchpad]
+  [qn_left   ] 0,3 c=1 v=52 p=1
+  [qn_left   ] 90 03 34 [quneo]
+  [qn        ] 90 03 34 [quneo]
+* [traktor   ] b1 38 01 [traktor] type=cc name=hotcue5_state_a value=1
+  [lp_left   ] 1,0 c=1 v=52 p=1
+  [lp_left   ] 90 10 34 [launchpad]
+  [lp        ] 90 10 34 [launchpad]
+  [qn_left   ] 1,0 c=1 v=52 p=1
+  [qn_left   ] 90 10 34 [quneo]
+  [qn        ] 90 10 34 [quneo]
+* [traktor   ] b1 39 01 [traktor] type=cc name=hotcue6_state_a value=1
+  [lp_left   ] 1,1 c=1 v=52 p=1
+  [lp_left   ] 90 11 34 [launchpad]
+  [lp        ] 90 11 34 [launchpad]
+  [qn_left   ] 1,1 c=1 v=52 p=1
+  [qn_left   ] 90 11 34 [quneo]
+  [qn        ] 90 11 34 [quneo]
+* [traktor   ] b1 3a 01 [traktor] type=cc name=hotcue7_state_a value=1
+  [lp_left   ] 1,2 c=1 v=52 p=1
+  [lp_left   ] 90 12 34 [launchpad]
+  [lp        ] 90 12 34 [launchpad]
+  [qn_left   ] 1,2 c=1 v=52 p=1
+  [qn_left   ] 90 12 34 [quneo]
+  [qn        ] 90 12 34 [quneo]
+* [traktor   ] b1 3b 01 [traktor] type=cc name=hotcue8_state_a value=1
+  [lp_left   ] 1,3 c=1 v=52 p=1
+  [lp_left   ] 90 13 34 [launchpad]
+  [lp        ] 90 13 34 [launchpad]
+  [qn_left   ] 1,3 c=1 v=52 p=1
+  [qn_left   ] 90 13 34 [quneo]
+  [qn        ] 90 13 34 [quneo]
+* [qn        ] 90 00 7f [quneo] type=note-on name=0,0 value=127
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+  [lp        ] b0 00 20 [launchpad]
+* [traktor   ] b0 01 7f [traktor] type=cc name=cue_a value=127
+  [lp_left   ] 7,2 c=1 v=7 p=1
+  [lp_left   ] 90 72 07 [launchpad]
+  [lp        ] 90 72 07 [launchpad]
+  [qn_left   ] 7,2 c=1 v=7 p=1
+  [qn_left   ] 90 72 07 [quneo]
+  [qn        ] 90 72 07 [quneo]
+* [traktor   ] ba 0d 34 [traktor] type=cc name=beat_phase_monitor_focus value=52
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 3e [traktor] type=cc name=beat_phase_monitor_focus value=62
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 48 [traktor] type=cc name=beat_phase_monitor_focus value=72
+* [traktor   ] ba 0d 52 [traktor] type=cc name=beat_phase_monitor_focus value=82
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] ba 0d 5c [traktor] type=cc name=beat_phase_monitor_focus value=92
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 02 [traktor] type=cc name=beat_phase_monitor_focus value=2
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] ba 0d 0c [traktor] type=cc name=beat_phase_monitor_focus value=12
+* [traktor   ] b4 52 6e [traktor] type=cc name=monitor_deck_afl_mono_a value=110
+* [traktor   ] b4 52 6b [traktor] type=cc name=monitor_deck_afl_mono_a value=107
+* [traktor   ] ba 0d 17 [traktor] type=cc name=beat_phase_monitor_focus value=23
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [traktor   ] ba 0d 16 [traktor] type=cc name=beat_phase_monitor_focus value=22
+* [traktor   ] ba 0d 23 [traktor] type=cc name=beat_phase_monitor_focus value=35
+* [traktor   ] ba 0d 1f [traktor] type=cc name=beat_phase_monitor_focus value=31
+* [traktor   ] b4 52 6e [traktor] type=cc name=monitor_deck_afl_mono_a value=110
+* [traktor   ] ba 0d 2d [traktor] type=cc name=beat_phase_monitor_focus value=45
+* [traktor   ] b4 52 70 [traktor] type=cc name=monitor_deck_afl_mono_a value=112
+* [traktor   ] ba 0d 29 [traktor] type=cc name=beat_phase_monitor_focus value=41
+* [traktor   ] b4 52 6b [traktor] type=cc name=monitor_deck_afl_mono_a value=107
+* [traktor   ] b4 52 74 [traktor] type=cc name=monitor_deck_afl_mono_a value=116
+* [traktor   ] ba 0d 33 [traktor] type=cc name=beat_phase_monitor_focus value=51
+  [lp        ] b0 00 21 [launchpad]
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 3d [traktor] type=cc name=beat_phase_monitor_focus value=61
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] ba 0d 47 [traktor] type=cc name=beat_phase_monitor_focus value=71
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] ba 0d 51 [traktor] type=cc name=beat_phase_monitor_focus value=81
+* [traktor   ] ba 0d 5b [traktor] type=cc name=beat_phase_monitor_focus value=91
+* [traktor   ] b4 52 68 [traktor] type=cc name=monitor_deck_afl_mono_a value=104
+* [traktor   ] b4 52 69 [traktor] type=cc name=monitor_deck_afl_mono_a value=105
+* [traktor   ] ba 0d 01 [traktor] type=cc name=beat_phase_monitor_focus value=1
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] b4 52 68 [traktor] type=cc name=monitor_deck_afl_mono_a value=104
+* [qn        ] 80 00 00 [quneo] type=note-off name=0,0 value=0
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=0
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+* [traktor   ] ba 0d 12 [traktor] type=cc name=beat_phase_monitor_focus value=18
+* [traktor   ] ba 0d 0b [traktor] type=cc name=beat_phase_monitor_focus value=11
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [traktor   ] b0 01 00 [traktor] type=cc name=cue_a value=0
+  [lp_left   ] 7,2 c=1 v=5 p=1
+  [lp_left   ] 90 72 05 [launchpad]
+  [lp        ] 90 72 05 [launchpad]
+  [qn_left   ] 7,2 c=1 v=5 p=1
+  [qn_left   ] 90 72 05 [quneo]
+  [qn        ] 90 72 05 [quneo]
+* [traktor   ] ba 0d 32 [traktor] type=cc name=beat_phase_monitor_focus value=50
+* [traktor   ] b4 52 62 [traktor] type=cc name=monitor_deck_afl_mono_a value=98
+* [traktor   ] ba 0d 15 [traktor] type=cc name=beat_phase_monitor_focus value=21
+* [traktor   ] b4 52 5e [traktor] type=cc name=monitor_deck_afl_mono_a value=94
+* [traktor   ] b4 52 4e [traktor] type=cc name=monitor_deck_afl_mono_a value=78
+* [traktor   ] b4 52 50 [traktor] type=cc name=monitor_deck_afl_mono_a value=80
+* [traktor   ] b4 52 41 [traktor] type=cc name=monitor_deck_afl_mono_a value=65
+* [qn        ] 90 00 7f [quneo] type=note-on name=0,0 value=127
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+* [traktor   ] b4 52 2e [traktor] type=cc name=monitor_deck_afl_mono_a value=46
+* [traktor   ] b4 52 33 [traktor] type=cc name=monitor_deck_afl_mono_a value=51
+* [traktor   ] b0 01 7f [traktor] type=cc name=cue_a value=127
+  [lp_left   ] 7,2 c=1 v=7 p=1
+  [lp_left   ] 90 72 07 [launchpad]
+  [lp        ] 90 72 07 [launchpad]
+  [qn_left   ] 7,2 c=1 v=7 p=1
+  [qn_left   ] 90 72 07 [quneo]
+  [qn        ] 90 72 07 [quneo]
+* [traktor   ] ba 0d 2b [traktor] type=cc name=beat_phase_monitor_focus value=43
+* [traktor   ] b4 52 6a [traktor] type=cc name=monitor_deck_afl_mono_a value=106
+* [traktor   ] ba 0d 35 [traktor] type=cc name=beat_phase_monitor_focus value=53
+* [traktor   ] b4 52 74 [traktor] type=cc name=monitor_deck_afl_mono_a value=116
+  [lp        ] b0 00 20 [launchpad]
+* [traktor   ] ba 0d 3f [traktor] type=cc name=beat_phase_monitor_focus value=63
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] ba 0d 49 [traktor] type=cc name=beat_phase_monitor_focus value=73
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 53 [traktor] type=cc name=beat_phase_monitor_focus value=83
+* [traktor   ] b4 52 70 [traktor] type=cc name=monitor_deck_afl_mono_a value=112
+* [traktor   ] ba 0d 5c [traktor] type=cc name=beat_phase_monitor_focus value=92
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] ba 0d 0a [traktor] type=cc name=beat_phase_monitor_focus value=10
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] ba 0d 02 [traktor] type=cc name=beat_phase_monitor_focus value=2
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] b4 52 67 [traktor] type=cc name=monitor_deck_afl_mono_a value=103
+* [traktor   ] ba 0d 14 [traktor] type=cc name=beat_phase_monitor_focus value=20
+* [traktor   ] ba 0d 0c [traktor] type=cc name=beat_phase_monitor_focus value=12
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [traktor   ] ba 0d 1f [traktor] type=cc name=beat_phase_monitor_focus value=31
+* [traktor   ] ba 0d 16 [traktor] type=cc name=beat_phase_monitor_focus value=22
+* [traktor   ] b4 52 6a [traktor] type=cc name=monitor_deck_afl_mono_a value=106
+* [traktor   ] ba 0d 23 [traktor] type=cc name=beat_phase_monitor_focus value=35
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [traktor   ] ba 0d 20 [traktor] type=cc name=beat_phase_monitor_focus value=32
+* [traktor   ] ba 0d 2e [traktor] type=cc name=beat_phase_monitor_focus value=46
+* [traktor   ] b4 52 6a [traktor] type=cc name=monitor_deck_afl_mono_a value=106
+* [traktor   ] ba 0d 2a [traktor] type=cc name=beat_phase_monitor_focus value=42
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] ba 0d 39 [traktor] type=cc name=beat_phase_monitor_focus value=57
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] ba 0d 34 [traktor] type=cc name=beat_phase_monitor_focus value=52
+* [traktor   ] b4 52 74 [traktor] type=cc name=monitor_deck_afl_mono_a value=116
+* [traktor   ] ba 0d 3e [traktor] type=cc name=beat_phase_monitor_focus value=62
+* [traktor   ] ba 0d 48 [traktor] type=cc name=beat_phase_monitor_focus value=72
+  [lp        ] b0 00 21 [launchpad]
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] ba 0d 52 [traktor] type=cc name=beat_phase_monitor_focus value=82
+* [traktor   ] b4 52 70 [traktor] type=cc name=monitor_deck_afl_mono_a value=112
+* [traktor   ] ba 0d 5b [traktor] type=cc name=beat_phase_monitor_focus value=91
+* [traktor   ] b4 52 6a [traktor] type=cc name=monitor_deck_afl_mono_a value=106
+* [traktor   ] ba 0d 01 [traktor] type=cc name=beat_phase_monitor_focus value=1
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] b4 52 67 [traktor] type=cc name=monitor_deck_afl_mono_a value=103
+* [traktor   ] ba 0d 13 [traktor] type=cc name=beat_phase_monitor_focus value=19
+* [traktor   ] ba 0d 0b [traktor] type=cc name=beat_phase_monitor_focus value=11
+* [traktor   ] b4 52 6c [traktor] type=cc name=monitor_deck_afl_mono_a value=108
+* [traktor   ] ba 0d 1d [traktor] type=cc name=beat_phase_monitor_focus value=29
+* [traktor   ] b4 52 5d [traktor] type=cc name=monitor_deck_afl_mono_a value=93
+* [traktor   ] ba 0d 15 [traktor] type=cc name=beat_phase_monitor_focus value=21
+* [traktor   ] ba 0d 28 [traktor] type=cc name=beat_phase_monitor_focus value=40
+* [traktor   ] ba 0d 1f [traktor] type=cc name=beat_phase_monitor_focus value=31
+* [traktor   ] b4 52 62 [traktor] type=cc name=monitor_deck_afl_mono_a value=98
+* [traktor   ] b4 52 52 [traktor] type=cc name=monitor_deck_afl_mono_a value=82
+* [traktor   ] ba 0d 2c [traktor] type=cc name=beat_phase_monitor_focus value=44
+* [traktor   ] b4 52 54 [traktor] type=cc name=monitor_deck_afl_mono_a value=84
+* [traktor   ] ba 0d 29 [traktor] type=cc name=beat_phase_monitor_focus value=41
+* [traktor   ] ba 0d 37 [traktor] type=cc name=beat_phase_monitor_focus value=55
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] ba 0d 33 [traktor] type=cc name=beat_phase_monitor_focus value=51
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 42 [traktor] type=cc name=beat_phase_monitor_focus value=66
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] ba 0d 3d [traktor] type=cc name=beat_phase_monitor_focus value=61
+* [qn        ] 80 00 00 [quneo] type=note-off name=0,0 value=0
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=0
+* [traktor   ] ba 0d 47 [traktor] type=cc name=beat_phase_monitor_focus value=71
+* [traktor   ] b4 52 70 [traktor] type=cc name=monitor_deck_afl_mono_a value=112
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+* [traktor   ] ba 0d 51 [traktor] type=cc name=beat_phase_monitor_focus value=81
+* [traktor   ] b0 01 00 [traktor] type=cc name=cue_a value=0
+  [lp_left   ] 7,2 c=1 v=5 p=1
+  [lp_left   ] 90 72 05 [launchpad]
+  [lp        ] 90 72 05 [launchpad]
+  [qn_left   ] 7,2 c=1 v=5 p=1
+  [qn_left   ] 90 72 05 [quneo]
+  [qn        ] 90 72 05 [quneo]
+* [traktor   ] ba 0d 32 [traktor] type=cc name=beat_phase_monitor_focus value=50
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] b4 52 64 [traktor] type=cc name=monitor_deck_afl_mono_a value=100
+  [lp        ] b0 00 20 [launchpad]
+* [traktor   ] b4 52 56 [traktor] type=cc name=monitor_deck_afl_mono_a value=86
+* [traktor   ] b4 52 54 [traktor] type=cc name=monitor_deck_afl_mono_a value=84
+* [traktor   ] b4 52 47 [traktor] type=cc name=monitor_deck_afl_mono_a value=71
+* [traktor   ] b4 52 33 [traktor] type=cc name=monitor_deck_afl_mono_a value=51
+* [traktor   ] b4 52 39 [traktor] type=cc name=monitor_deck_afl_mono_a value=57
+* [traktor   ] b4 52 2a [traktor] type=cc name=monitor_deck_afl_mono_a value=42
+* [traktor   ] b4 52 1c [traktor] type=cc name=monitor_deck_afl_mono_a value=28
+* [traktor   ] b4 52 0d [traktor] type=cc name=monitor_deck_afl_mono_a value=13
+* [traktor   ] b4 52 01 [traktor] type=cc name=monitor_deck_afl_mono_a value=1
+* [qn        ] 90 00 7f [quneo] type=note-on name=0,0 value=127
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=127
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=127 p=0
+  [traktor   ] b0 54 7f [traktor]
+* [traktor   ] b0 01 7f [traktor] type=cc name=cue_a value=127
+  [lp_left   ] 7,2 c=1 v=7 p=1
+  [lp_left   ] 90 72 07 [launchpad]
+  [lp        ] 90 72 07 [launchpad]
+  [qn_left   ] 7,2 c=1 v=7 p=1
+  [qn_left   ] 90 72 07 [quneo]
+  [qn        ] 90 72 07 [quneo]
+* [traktor   ] ba 0d 2b [traktor] type=cc name=beat_phase_monitor_focus value=43
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [traktor   ] ba 0d 2e [traktor] type=cc name=beat_phase_monitor_focus value=46
+* [traktor   ] b4 52 74 [traktor] type=cc name=monitor_deck_afl_mono_a value=116
+* [traktor   ] ba 0d 39 [traktor] type=cc name=beat_phase_monitor_focus value=57
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 38 [traktor] type=cc name=beat_phase_monitor_focus value=56
+* [traktor   ] ba 14 64 [traktor] type=cc name=beat_monitor_focus value=100
+* [traktor   ] ba 0d 44 [traktor] type=cc name=beat_phase_monitor_focus value=68
+* [traktor   ] ba 0d 42 [traktor] type=cc name=beat_phase_monitor_focus value=66
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] ba 0d 4c [traktor] type=cc name=beat_phase_monitor_focus value=76
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+  [midi clock] .. .. .. interval=34.905ms, bpm=107.44
+  [lp        ] b0 00 21 [launchpad]
+* [traktor   ] ba 0d 56 [traktor] type=cc name=beat_phase_monitor_focus value=86
+* [traktor   ] b4 52 73 [traktor] type=cc name=monitor_deck_afl_mono_a value=115
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] ba 0d 60 [traktor] type=cc name=beat_phase_monitor_focus value=96
+* [traktor   ] b4 52 71 [traktor] type=cc name=monitor_deck_afl_mono_a value=113
+* [traktor   ] b4 52 6c [traktor] type=cc name=monitor_deck_afl_mono_a value=108
+* [traktor   ] ba 0d 0f [traktor] type=cc name=beat_phase_monitor_focus value=15
+* [traktor   ] ba 0d 05 [traktor] type=cc name=beat_phase_monitor_focus value=5
+* [traktor   ] ba 14 00 [traktor] type=cc name=beat_monitor_focus value=0
+* [traktor   ] b4 52 72 [traktor] type=cc name=monitor_deck_afl_mono_a value=114
+* [traktor   ] ba 0d 1e [traktor] type=cc name=beat_phase_monitor_focus value=30
+* [traktor   ] ba 0d 19 [traktor] type=cc name=beat_phase_monitor_focus value=25
+* [traktor   ] b4 52 6d [traktor] type=cc name=monitor_deck_afl_mono_a value=109
+* [qn        ] 80 00 00 [quneo] type=note-off name=0,0 value=0
+- [qn_left   ] .. .. .. [quneo] type=event name=0,0 value=0
+  [traktor   ] select_set_store_hotcue_1_a c=1 v=0 p=0
+  [traktor   ] b0 54 00 [traktor]
+* [traktor   ] b0 01 00 [traktor] type=cc name=cue_a value=0
+  [lp_left   ] 7,2 c=1 v=5 p=1
+  [lp_left   ] 90 72 05 [launchpad]
+  [lp        ] 90 72 05 [launchpad]
+  [qn_left   ] 7,2 c=1 v=5 p=1
+  [qn_left   ] 90 72 05 [quneo]
+  [qn        ] 90 72 05 [quneo]
+* [traktor   ] ba 0d 32 [traktor] type=cc name=beat_phase_monitor_focus value=50
+* [traktor   ] b4 52 70 [traktor] type=cc name=monitor_deck_afl_mono_a value=112
+* [traktor   ] ba 0d 23 [traktor] type=cc name=beat_phase_monitor_focus value=35
+* [traktor   ] b4 52 5a [traktor] type=cc name=monitor_deck_afl_mono_a value=90
+* [traktor   ] b4 52 62 [traktor] type=cc name=monitor_deck_afl_mono_a value=98
+* [traktor   ] b4 52 53 [traktor] type=cc name=monitor_deck_afl_mono_a value=83
+* [traktor   ] b4 52 45 [traktor] type=cc name=monitor_deck_afl_mono_a value=69
+* [traktor   ] b4 52 36 [traktor] type=cc name=monitor_deck_afl_mono_a value=54
+* [traktor   ] b4 52 28 [traktor] type=cc name=monitor_deck_afl_mono_a value=40
+* [traktor   ] b4 52 19 [traktor] type=cc name=monitor_deck_afl_mono_a value=25
+  [lp        ] b0 00 20 [launchpad]
+* [traktor   ] b4 52 0b [traktor] type=cc name=monitor_deck_afl_mono_a value=11
+* [traktor   ] b4 52 05 [traktor] type=cc name=monitor_deck_afl_mono_a value=5
+* [traktor   ] b4 52 01 [traktor] type=cc name=monitor_deck_afl_mono_a value=1
+* [traktor   ] b4 52 00 [traktor] type=cc name=monitor_deck_afl_mono_a value=0
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.787ms, bpm=107.80
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.864ms, bpm=107.56
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.455ms, bpm=108.84
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.854ms, bpm=107.59
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.749ms, bpm=107.92
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.486ms, bpm=108.74
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.872ms, bpm=107.54
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.800ms, bpm=107.76
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.867ms, bpm=107.55
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.424ms, bpm=108.94
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.865ms, bpm=107.56
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.777ms, bpm=107.83
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.459ms, bpm=108.83
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.818ms, bpm=107.70
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.884ms, bpm=107.50
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.435ms, bpm=108.90
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.806ms, bpm=107.74
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.836ms, bpm=107.65
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.836ms, bpm=107.65
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.429ms, bpm=108.92
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.875ms, bpm=107.53
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.810ms, bpm=107.73
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.497ms, bpm=108.70
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.774ms, bpm=107.84
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.882ms, bpm=107.51
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.478ms, bpm=108.77
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.807ms, bpm=107.74
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.804ms, bpm=107.75
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.843ms, bpm=107.62
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.443ms, bpm=108.87
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.819ms, bpm=107.70
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.845ms, bpm=107.62
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.419ms, bpm=108.95
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.876ms, bpm=107.52
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.833ms, bpm=107.66
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.802ms, bpm=107.75
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.487ms, bpm=108.74
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.782ms, bpm=107.81
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.890ms, bpm=107.48
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.450ms, bpm=108.85
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.775ms, bpm=107.84
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.850ms, bpm=107.61
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.461ms, bpm=108.82
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.864ms, bpm=107.56
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [midi clock] .. .. .. interval=34.803ms, bpm=107.75
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+  [lp        ] b0 00 20 [launchpad]
+  [lp        ] b0 00 21 [launchpad]
+^C

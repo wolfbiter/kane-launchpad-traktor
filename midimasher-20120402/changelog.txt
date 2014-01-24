@@ -1,0 +1,55 @@
+= 20120402 =
+
+== general ==
+
+* spawn a new thread for each midi device that has an open 'out' port that handles the actual sending of data to each midi device to release the main thread to process the next message. use pthread_cond_wait() and pthread_cond_signal() to synchronize the threads.
+* remove use of *CriticalSection() functions for windows version, replacing with the pthread_* functions within cygwin
+* rounded to 2 decimal places bpm from get_bpm()
+* traktor.tsi: added missing effect_X_select_unit_Y, master_tempo_clock_send and master_tempo_clock_sync_midi and removed beat_phase_monitor_a, beat_phase_monitor_b, seek_position_a, seek_position_b (unused and just eating bandwidth)
+* optionally don't require .lua extension when using -f command line arg
+
+== midi clock == 
+
+* print out calculated bpm every 8 beats in debug mode (-d) like "interval=25.861ms, bpm=145.00"
+* added new "_global" event "beat" that is fired on every beat based on midi clock
+* used new "beat" event to sync flashing leds for launchpad and in the traktor slicer
+* added buttons in launchpad config for midi clock on vol+pan buttons of page 1
+* new function midi_clock_adjust(number) that can be used to adjust (from 0 to 23) the offset that the "beat" event is created from the incoming midi clock ticks (24 per beat). offset is reset to 0 when a midi clock "start" message is received
+* added adjust +/- buttons for the midi clock offset in the launchpad config on snda/sndb buttons on page 1
+* new function get_midi_clock_phase() that returns a number between 0 and 23
+
+== pitchbend messages ==
+
+* added support for decoding pitchbend messages
+* added hires traktor messages: tempo_fader_a_hires, tempo_fader_b_hires, x_fader_hires, volume_fader_a_hires, volume_fader_b_hires
+* added MIDI_PITCHBEND, MIDI_HIRES_RANGE and MIDI_LORES_RANGE constants
+
+* define a pitchbend msg in the devices file using type of "pb"
+
+  add_control("tempo_fader_a_hires,", 1, "pb")
+
+* can send pitchbend message either by name to a device with a "pb" control defined:
+
+  send("traktor", "tempo_fader_a_hires,", 1234);
+
+* or via send_midi()
+
+  send_midi("traktor", 1, MIDI_PITCHBEND, 1234)
+
+== hid devices ==
+
+* added timeout and retries on device connect
+* renamed some controls in devices/hercules_mk2_hid.lua to match traktor
+* new optional 7th arg to pipe() is a value to scale the input range
+
+* to scale a hid fader with range of 0-255 to normal midi message:
+
+  pipe("gamepad", "volume_fader_a", 0, "traktor", "volume_fader_a", 0, 0.5)
+
+* to scale to a hires message:
+
+  pipe("gamepad", "volume_fader_a", 0, "traktor", "tempo_fader_a_hires", 0, MIDI_HIRES_RANGE  / 256)
+
+* the scaling arg is just an extra option to the core route{} function (see lib/base.lua) so is equivalent to this:
+
+  route{ device = "ganepad", event = "volume_fader_a", tdevice = "traktor", tevent = "tempo_fader_a_hires", duplex = false, scale = MIDI_HIRES_RANGE  / 256 }
