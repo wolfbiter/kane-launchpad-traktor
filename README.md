@@ -19,24 +19,24 @@ my customized set of controls and LEDs.
 
 ------------------------
 ## I) Install:
-###1. [Download the preset as a zip archive](https://github.com/wolfbiter/kane-launchpad-traktor/archive/master.zip).
-###2. Copy contents of mixxx-controls to the mixxx preset folder
+#####1. [Download the preset as a zip archive](https://github.com/wolfbiter/kane-launchpad-traktor/archive/master.zip).
+#####2. Copy contents of mixxx-controls to the mixxx preset folder
 
 ------------------------
 ## II) Controls:
 - The Launchpad is split in two: The left half controls decks A/C, and the right half, decks B/D.
+- Some buttons have secondary functions while the shift button is held.
 - For a detailed explanation of each button, refer to the list below the image.
 
 ![Diagram](https://raw.github.com/wolfbiter/kane-launchpad-traktor/master/launchpad-diagram%20backup.PNG)
 
-####1-8,33-40: Hotcues
+####1-8, 33-40: Hotcues
 - **Press**: select or place hotcue.
 - **Shift**: delete hotcue.
 
-####9, 41
-###### Grid Cue
-- On press, place grid cue.
-- On shift, delete grid cue.
+####9, 41: Grid Cues
+- **Press**: place grid cue.
+- **Shift**: delete grid cue.
 
 
 ------------------------
