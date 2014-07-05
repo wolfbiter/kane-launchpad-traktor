@@ -1,5 +1,5 @@
 #Kane Launchpad Traktor Preset
-Version 1.0.x
+Version 0.0.x [UNDER CONSTRUCTION]
 
 ------------------------
 ###Featuring a LIVE [Demo/Tutorial Video](https://youtu.be/dpdWzb0PEWo)!
