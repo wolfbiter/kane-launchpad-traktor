@@ -1,5 +1,7 @@
-#Kane Launchpad Traktor Preset
-Version 0.0.x [Deprecated, no longer being maintained]
+# Kane Launchpad Traktor Preset
+Version 0.0.x
+
+## [Deprecated, no longer being maintained]
 
 ------------------------
 ###Featuring a LIVE [Demo/Tutorial Video](https://youtu.be/scnv_NNAdM0)!
