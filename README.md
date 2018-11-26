@@ -1,8 +1,8 @@
 #Kane Launchpad Traktor Preset
-Version 0.0.x [UNDER CONSTRUCTION]
+Version 0.0.x [Deprecated, no longer being maintained]
 
 ------------------------
-###Featuring a LIVE [Demo/Tutorial Video](https://youtu.be/dpdWzb0PEWo)!
+###Featuring a LIVE [Demo/Tutorial Video](https://youtu.be/scnv_NNAdM0)!
 ------------------------
 
 + This repository contains all the components necessary to link a Launchpad to Traktor with
